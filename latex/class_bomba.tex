@@ -1,0 +1,96 @@
+\hypertarget{class_bomba}{}\doxysection{Dokumentacja klasy Bomba}
+\label{class_bomba}\index{Bomba@{Bomba}}
+
+
+{\ttfamily \#include $<$Bomba.\+h$>$}
+
+Diagram dziedziczenia dla Bomba\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bomba}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bomba_a02241645f78e032325aa5b0976eab0ed}{Bomba}} (int \mbox{\hyperlink{class_postac_a5a2397cebdac57989a205e18b9bb40ba}{x}}, int \mbox{\hyperlink{class_postac_a29512919cf0f78d4685e911c257e273b}{y}}, std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela)
+\begin{DoxyCompactList}\small\item\em Konstruktor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_bomba_aa5c80e15ac264b198374551b45977274}{wykonaj\+\_\+ruch}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela, bool \&koniec)
+\begin{DoxyCompactList}\small\item\em Wykonany zostaje ruch odpowadający Bombie. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_bomba_a1c3619b7f0dfa3d62d4262c54625da48}{smierc}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela)
+\begin{DoxyCompactList}\small\item\em Śmierć Bomby, usunięcie z planszy zajmowanych pól. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Dziedziczy po klasie \mbox{\hyperlink{class_postac}{Postac}}. Jeśli zostanie stworzony obiekt klasy \mbox{\hyperlink{class_bomba}{Bomba}}, to będą wykonywane zdefiniowane tutaj ruchy i śmierć. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_bomba_a02241645f78e032325aa5b0976eab0ed}\label{class_bomba_a02241645f78e032325aa5b0976eab0ed}} 
+\index{Bomba@{Bomba}!Bomba@{Bomba}}
+\index{Bomba@{Bomba}!Bomba@{Bomba}}
+\doxysubsubsection{\texorpdfstring{Bomba()}{Bomba()}}
+{\footnotesize\ttfamily Bomba\+::\+Bomba (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela }\end{DoxyParamCaption})}
+
+
+
+Konstruktor 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & położenie danego przeciwnika na osi x\\
+\hline
+{\em y} & położenie danego przeciwnika na osi y\\
+\hline
+{\em tabela} & jako referencja przekazywana jest cała tabela, ponieważ zostanie w niej umieszczony przeciwnik\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_bomba_a1c3619b7f0dfa3d62d4262c54625da48}\label{class_bomba_a1c3619b7f0dfa3d62d4262c54625da48}} 
+\index{Bomba@{Bomba}!smierc@{smierc}}
+\index{smierc@{smierc}!Bomba@{Bomba}}
+\doxysubsubsection{\texorpdfstring{smierc()}{smierc()}}
+{\footnotesize\ttfamily void Bomba\+::smierc (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Śmierć Bomby, usunięcie z planszy zajmowanych pól. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \mbox{\hyperlink{class_postac_aa8b87a881ff95588ad6ab62dd04c4668}{Postac}}.
+
+\mbox{\Hypertarget{class_bomba_aa5c80e15ac264b198374551b45977274}\label{class_bomba_aa5c80e15ac264b198374551b45977274}} 
+\index{Bomba@{Bomba}!wykonaj\_ruch@{wykonaj\_ruch}}
+\index{wykonaj\_ruch@{wykonaj\_ruch}!Bomba@{Bomba}}
+\doxysubsubsection{\texorpdfstring{wykonaj\_ruch()}{wykonaj\_ruch()}}
+{\footnotesize\ttfamily void Bomba\+::wykonaj\+\_\+ruch (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela,  }\item[{bool \&}]{koniec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Wykonany zostaje ruch odpowadający Bombie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+{\em koniec} & referencja na pole typu bool, jeśli zajdzie taka potrzeba (strzał dotknie gracza), to gra jest kończona\\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \mbox{\hyperlink{class_postac_a7bd99b2ccf179eb82d34d5fd677255cf}{Postac}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_bomba_8h}{Bomba.\+h}}\item 
+\mbox{\hyperlink{_bomba_8cpp}{Bomba.\+cpp}}\end{DoxyCompactItemize}

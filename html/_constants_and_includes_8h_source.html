@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zmodyfikowana gra Mario: Plik źródłowy ConstantsAndIncludes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zmodyfikowana gra Mario
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ConstantsAndIncludes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_constants_and_includes_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;barrier&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;regex&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;ranges&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#af846190964e143c0c3050e898201108f">   20</a></span>&#160;<span class="preprocessor">#define dlugosc_planszy 210 </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#ac002d4d920da2b6d643dd680de13c3a6">   21</a></span>&#160;<span class="preprocessor">#define wysokosc_planszy 16 </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a96d178870536e685e623c13f044c5d9b">   22</a></span>&#160;<span class="preprocessor">#define bezpieczne_pola 10 </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a6c2667abfe4a545afd7e5cd264a6fa01">   23</a></span>&#160;<span class="preprocessor">#define maksymalny_odstep_const 4 </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#ae3759ee15baf052aec1bb1d92e4248c2">   24</a></span>&#160;<span class="preprocessor">#define minimalna_dlugosc_wyspy 5 </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a42101ccbdecba77b849b64ef979bf782">   25</a></span>&#160;<span class="preprocessor">#define roznica_wysokosci_pomiedzy_wyspami 3 </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#aa8033a2c122af01279c1e0fbb8323975">   26</a></span>&#160;<span class="preprocessor">#define skok_const 4 </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#af1434d1fcc5d5bcc754b85a073431166">   27</a></span>&#160;<span class="preprocessor">#define ilosc_wyswietlonych_pol 35 </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#af652084a7dd0d0f0b3be0a1a9f594102">   28</a></span>&#160;<span class="preprocessor">#define odstep_gorny 30.0f </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a5394010281f605364a1ba894f7cff9d9">   29</a></span>&#160;<span class="preprocessor">#define odstep_boczny 30.0f </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#ad9e8292f60f2dae6c160e5362f5451ed">   30</a></span>&#160;<span class="preprocessor">#define minimalny_czas_przesuniecia_strzalu 0.3 </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a9c9ecf44e28ba632d0d06b166078d112">   31</a></span>&#160;<span class="preprocessor">#define minimalny_czas_pomiędzy_ruchem_postaci 30 </span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a57d950c6fe25f3f323461ed56d290f18">   32</a></span>&#160;<span class="preprocessor">#define zasieg_strzalu_pionowego 5 </span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a10c2b6792c0f2adf9a573692acbdac1f">   33</a></span>&#160;<span class="preprocessor">#define zasieg_strzalu_poziomego 6 </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a69265d6715876b259228df060ae9c552">   34</a></span>&#160;<span class="preprocessor">#define maksymalne_cofniecie_gracza 5 </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//wszystkie wartosci z ktorych moze skladac sie plansza</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#ada893a170cd8e0c4c1a229ca14ffe8f3">   37</a></span>&#160;<span class="preprocessor">#define podloga 1</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#aae2da36252a92cd4a0b4f484f3e68c07">   38</a></span>&#160;<span class="preprocessor">#define gracz_p 10 </span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#ade7941ea1593522d8c35c223e5501b1b">   39</a></span>&#160;<span class="preprocessor">#define gracz_k 13 </span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#ab06b8b6a29b283ad36d411dec5575a7b">   40</a></span>&#160;<span class="preprocessor">#define pusta_przestrzen 0</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a539139cb3280b16f54282622bafc6965">   41</a></span>&#160;<span class="preprocessor">#define gora_gracza_p 10</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#ae6314caddf2561b91d58f4481328b376">   42</a></span>&#160;<span class="preprocessor">#define dol_gracza_p 11</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a5408d0572c93e0fdd511713eeebb8f53">   43</a></span>&#160;<span class="preprocessor">#define gora_gracza_l 12</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a738bb796b6f3bebcf0aa593db870ee63">   44</a></span>&#160;<span class="preprocessor">#define dol_gracza_l 13</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a1d876e29ef609f2feff4c4295f9d8bb4">   45</a></span>&#160;<span class="preprocessor">#define punkt 2</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a67f46420318f4bbc0be684526e1e6ff5">   46</a></span>&#160;<span class="preprocessor">#define strzelec_poziomy_g 20</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a5f6458f93af868fb3c5dde02616ae4d6">   47</a></span>&#160;<span class="preprocessor">#define strzelec_poziomy_d 21</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a1e80be1abaa8052c12691aff51429bc2">   48</a></span>&#160;<span class="preprocessor">#define strzal_poziomy 22</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#af02f7192cb060f457334896273ee9745">   49</a></span>&#160;<span class="preprocessor">#define strzelec_pionowy_g 23</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a6f3da9a1ec62cafc8eedd5325fa849e5">   50</a></span>&#160;<span class="preprocessor">#define strzelec_pionowy_d 24</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a23d4f53dbfad7da3ac14e947bee63e67">   51</a></span>&#160;<span class="preprocessor">#define strzal_pionowy 25</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#ab3dabc1c7a080344c90f3d617af690d3">   52</a></span>&#160;<span class="preprocessor">#define bomba 26</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#a29c212b31f406b2a8393c2b6d8842d5b">   55</a></span>&#160;<span class="preprocessor">#define latwy_punkty 5</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="_constants_and_includes_8h.html#ae76289e9020da354e139aff5ed4b851d">   56</a></span>&#160;<span class="preprocessor">#define sredni_punkty 12</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define trudny_punkty 25</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

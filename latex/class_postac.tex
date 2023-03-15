@@ -1,0 +1,214 @@
+\hypertarget{class_postac}{}\doxysection{Dokumentacja klasy Postac}
+\label{class_postac}\index{Postac@{Postac}}
+
+
+{\ttfamily \#include $<$Ruchy.\+h$>$}
+
+Diagram dziedziczenia dla Postac\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_postac}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_postac_a8893a3e4c92919010ea9e7cfcb3d2602}{sprawdzenie\+\_\+pola}} (int wartosc\+\_\+pola, bool \&koniec)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy potencjalny strzał może zostać wykonany, w przypadku napotkania gracza przerwa również grę \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_postac_a92ea489c5794a1e502ed49d58ce8f94d}{Postac}} (int \mbox{\hyperlink{class_postac_a5a2397cebdac57989a205e18b9bb40ba}{x}}, int \mbox{\hyperlink{class_postac_a29512919cf0f78d4685e911c257e273b}{y}})
+\begin{DoxyCompactList}\small\item\em Konstruktor, przypisuje danemu przeciwnikowi współrzędne oraz czas stworzenia \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_postac_a330931e57275b25dd1ef8e16d2689904}{zwroc\+\_\+x}} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca współrzędną x \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_postac_acc1ac1f4c94a79852f8024b12ac32e63}{zwroc\+\_\+y}} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca współrzędną y \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_postac_a7bd99b2ccf179eb82d34d5fd677255cf}{wykonaj\+\_\+ruch}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela, bool \&koniec)=0
+\begin{DoxyCompactList}\small\item\em Metoda czysto wirtualna, wykonywany będzie ruch zależny od tego, z jakim przeciwnikiem mamy do czynienia \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_postac_aa8b87a881ff95588ad6ab62dd04c4668}{smierc}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela)=0
+\begin{DoxyCompactList}\small\item\em Metoda czysto wirtualna, wpływ śmierci przeciwnika na grę jest zależny od tego, z jakim przeciwnikiem mamy do czynienia \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ \mbox{\hyperlink{class_postac_a7e1acfbd850439c649c9b2562d694ff3}{czas}}
+\begin{DoxyCompactList}\small\item\em czas pojawienia się na mapie danego przeciwnika, będzie od niego zależeć czas strzału \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_postac_a5a2397cebdac57989a205e18b9bb40ba}{x}}
+\begin{DoxyCompactList}\small\item\em położenie danego przeciwnika na osi x \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_postac_a29512919cf0f78d4685e911c257e273b}{y}}
+\begin{DoxyCompactList}\small\item\em położenie danego przeciwnika na osi y \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_postac_a4f0d62008f833f317ac7de34d23fa183}{Przeciwnicy}}
+\begin{DoxyCompactList}\small\item\em W klasie \mbox{\hyperlink{class_przeciwnicy}{Przeciwnicy}} znajduje się lista zawierająca wszystkich aktualnie znajdujących się na planszy przeciwników. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Zawiera dwie metody czysto wirtualne, jest dziedziczona przez wszystkie potwory umieszczone w grze. O każdym stworzonym potworze musimy przechowywać pewne istotne informacje, więc odpowiednie, służące temu pola znajdują się właśnie w tej klasie. 
+\begin{DoxyParams}{Parametry}
+{\em czas} & czas pojawienia się na mapie danego przeciwnika, będzie od niego zależeć czas strzału \\
+\hline
+{\em x} & położenie danego przeciwnika na osi x \\
+\hline
+{\em y} & położenie danego przeciwnika na osi y \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_postac_a92ea489c5794a1e502ed49d58ce8f94d}\label{class_postac_a92ea489c5794a1e502ed49d58ce8f94d}} 
+\index{Postac@{Postac}!Postac@{Postac}}
+\index{Postac@{Postac}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{Postac()}{Postac()}}
+{\footnotesize\ttfamily Postac\+::\+Postac (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Konstruktor, przypisuje danemu przeciwnikowi współrzędne oraz czas stworzenia 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & położenie danego przeciwnika na osi x\\
+\hline
+{\em y} & położenie danego przeciwnika na osi y\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_postac_aa8b87a881ff95588ad6ab62dd04c4668}\label{class_postac_aa8b87a881ff95588ad6ab62dd04c4668}} 
+\index{Postac@{Postac}!smierc@{smierc}}
+\index{smierc@{smierc}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{smierc()}{smierc()}}
+{\footnotesize\ttfamily virtual void Postac\+::smierc (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Metoda czysto wirtualna, wpływ śmierci przeciwnika na grę jest zależny od tego, z jakim przeciwnikiem mamy do czynienia 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & \\
+\hline
+\end{DoxyParams}
+
+
+Implementowany w \mbox{\hyperlink{class_strzelec__poziomy_a710e19f96e0b8be1fd944f7ace9b1306}{Strzelec\+\_\+poziomy}}, \mbox{\hyperlink{class_strzelec__pionowy_af03f716dafa40cdc4171937f2cbd54f1}{Strzelec\+\_\+pionowy}} i \mbox{\hyperlink{class_bomba_a1c3619b7f0dfa3d62d4262c54625da48}{Bomba}}.
+
+\mbox{\Hypertarget{class_postac_a8893a3e4c92919010ea9e7cfcb3d2602}\label{class_postac_a8893a3e4c92919010ea9e7cfcb3d2602}} 
+\index{Postac@{Postac}!sprawdzenie\_pola@{sprawdzenie\_pola}}
+\index{sprawdzenie\_pola@{sprawdzenie\_pola}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{sprawdzenie\_pola()}{sprawdzenie\_pola()}}
+{\footnotesize\ttfamily bool Postac\+::sprawdzenie\+\_\+pola (\begin{DoxyParamCaption}\item[{int}]{wartosc\+\_\+pola,  }\item[{bool \&}]{koniec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sprawdza czy potencjalny strzał może zostać wykonany, w przypadku napotkania gracza przerwa również grę 
+
+
+\begin{DoxyParams}{Parametry}
+{\em wartosc\+\_\+pola} & przekazywana jest wartość sprawdzanego pola planszy, nie ma potrzeby przekazywania jej całej, ponieważ i tak sprawdzany będzie pojedynczy element\\
+\hline
+{\em koniec} & referencja na pole typu bool, jeśli zajdzie taka potrzeba (strzał dotknie gracza), to gra jest kończona\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwracana jest informacja, czy potencjalny strzał może zostać wykonany
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_postac_a7bd99b2ccf179eb82d34d5fd677255cf}\label{class_postac_a7bd99b2ccf179eb82d34d5fd677255cf}} 
+\index{Postac@{Postac}!wykonaj\_ruch@{wykonaj\_ruch}}
+\index{wykonaj\_ruch@{wykonaj\_ruch}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{wykonaj\_ruch()}{wykonaj\_ruch()}}
+{\footnotesize\ttfamily virtual void Postac\+::wykonaj\+\_\+ruch (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela,  }\item[{bool \&}]{koniec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Metoda czysto wirtualna, wykonywany będzie ruch zależny od tego, z jakim przeciwnikiem mamy do czynienia 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+{\em koniec} & referencja na pole typu bool, jeśli zajdzie taka potrzeba (strzał dotknie gracza), to gra jest kończona\\
+\hline
+\end{DoxyParams}
+
+
+Implementowany w \mbox{\hyperlink{class_strzelec__poziomy_a92b70808ac2ef0e708cda3fd267656a8}{Strzelec\+\_\+poziomy}}, \mbox{\hyperlink{class_strzelec__pionowy_a8c19f12905bc60b7d7103cdb6f8107f5}{Strzelec\+\_\+pionowy}} i \mbox{\hyperlink{class_bomba_aa5c80e15ac264b198374551b45977274}{Bomba}}.
+
+\mbox{\Hypertarget{class_postac_a330931e57275b25dd1ef8e16d2689904}\label{class_postac_a330931e57275b25dd1ef8e16d2689904}} 
+\index{Postac@{Postac}!zwroc\_x@{zwroc\_x}}
+\index{zwroc\_x@{zwroc\_x}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{zwroc\_x()}{zwroc\_x()}}
+{\footnotesize\ttfamily int Postac\+::zwroc\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda zwracająca współrzędną x 
+
+\begin{DoxyReturn}{Zwraca}
+x
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_postac_acc1ac1f4c94a79852f8024b12ac32e63}\label{class_postac_acc1ac1f4c94a79852f8024b12ac32e63}} 
+\index{Postac@{Postac}!zwroc\_y@{zwroc\_y}}
+\index{zwroc\_y@{zwroc\_y}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{zwroc\_y()}{zwroc\_y()}}
+{\footnotesize\ttfamily int Postac\+::zwroc\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda zwracająca współrzędną y 
+
+\begin{DoxyReturn}{Zwraca}
+y
+\end{DoxyReturn}
+
+
+\doxysubsection{Dokumentacja przyjaciół i funkcji związanych}
+\mbox{\Hypertarget{class_postac_a4f0d62008f833f317ac7de34d23fa183}\label{class_postac_a4f0d62008f833f317ac7de34d23fa183}} 
+\index{Postac@{Postac}!Przeciwnicy@{Przeciwnicy}}
+\index{Przeciwnicy@{Przeciwnicy}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{Przeciwnicy}{Przeciwnicy}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_przeciwnicy}{Przeciwnicy}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+W klasie \mbox{\hyperlink{class_przeciwnicy}{Przeciwnicy}} znajduje się lista zawierająca wszystkich aktualnie znajdujących się na planszy przeciwników. 
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_postac_a7e1acfbd850439c649c9b2562d694ff3}\label{class_postac_a7e1acfbd850439c649c9b2562d694ff3}} 
+\index{Postac@{Postac}!czas@{czas}}
+\index{czas@{czas}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{czas}{czas}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$std\+::chrono\+::high\+\_\+resolution\+\_\+clock$>$ Postac\+::czas\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+czas pojawienia się na mapie danego przeciwnika, będzie od niego zależeć czas strzału 
+
+\mbox{\Hypertarget{class_postac_a5a2397cebdac57989a205e18b9bb40ba}\label{class_postac_a5a2397cebdac57989a205e18b9bb40ba}} 
+\index{Postac@{Postac}!x@{x}}
+\index{x@{x}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Postac\+::x\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+położenie danego przeciwnika na osi x 
+
+\mbox{\Hypertarget{class_postac_a29512919cf0f78d4685e911c257e273b}\label{class_postac_a29512919cf0f78d4685e911c257e273b}} 
+\index{Postac@{Postac}!y@{y}}
+\index{y@{y}!Postac@{Postac}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Postac\+::y\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+położenie danego przeciwnika na osi y 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ruchy_8h}{Ruchy.\+h}}\item 
+\mbox{\hyperlink{_ruchy_8cpp}{Ruchy.\+cpp}}\end{DoxyCompactItemize}

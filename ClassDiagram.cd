@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bomba" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAACAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Bomba.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gra" Collapsed="true">
+    <Position X="3.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Gra.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mario" Collapsed="true">
+    <Position X="8.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mario.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menu" Collapsed="true">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Menu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plansza" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAACAAgAASg0AIAgAghAAAAAEAQgAACAwEAECIA=</HashCode>
+      <FileName>Plansza.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Przeciwnicy" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAgAAAAAAAAAAAAACAAAABQMAA=</HashCode>
+      <FileName>Przeciwnicy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rekord" Collapsed="true">
+    <Position X="10" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAIAAAQAEAgACJQA=</HashCode>
+      <FileName>Rekord.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Postac" Collapsed="true">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGAAACAAAAAAAAAAAAAAAAAAAAFgAAAFAQA=</HashCode>
+      <FileName>Ruchy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Strzelec_pionowy" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAIAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Strzelec_pionowy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Strzelec_poziomy" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAABAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Strzelec_poziomy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zapis" Collapsed="true">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAhAAAAIAAAAIAAAAAAAA=</HashCode>
+      <FileName>Zapis.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

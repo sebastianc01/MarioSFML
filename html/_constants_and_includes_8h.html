@@ -1,0 +1,630 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zmodyfikowana gra Mario: Dokumentacja pliku ConstantsAndIncludes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zmodyfikowana gra Mario
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku ConstantsAndIncludes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;barrier&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;SFML/Graphics.hpp&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;regex&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;ranges&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+</div>
+<p><a href="_constants_and_includes_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:af846190964e143c0c3050e898201108f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#af846190964e143c0c3050e898201108f">dlugosc_planszy</a>&#160;&#160;&#160;210</td></tr>
+<tr class="separator:af846190964e143c0c3050e898201108f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac002d4d920da2b6d643dd680de13c3a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#ac002d4d920da2b6d643dd680de13c3a6">wysokosc_planszy</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ac002d4d920da2b6d643dd680de13c3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d178870536e685e623c13f044c5d9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a96d178870536e685e623c13f044c5d9b">bezpieczne_pola</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a96d178870536e685e623c13f044c5d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2667abfe4a545afd7e5cd264a6fa01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a6c2667abfe4a545afd7e5cd264a6fa01">maksymalny_odstep_const</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a6c2667abfe4a545afd7e5cd264a6fa01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3759ee15baf052aec1bb1d92e4248c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#ae3759ee15baf052aec1bb1d92e4248c2">minimalna_dlugosc_wyspy</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ae3759ee15baf052aec1bb1d92e4248c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42101ccbdecba77b849b64ef979bf782"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a42101ccbdecba77b849b64ef979bf782">roznica_wysokosci_pomiedzy_wyspami</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a42101ccbdecba77b849b64ef979bf782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8033a2c122af01279c1e0fbb8323975"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#aa8033a2c122af01279c1e0fbb8323975">skok_const</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:aa8033a2c122af01279c1e0fbb8323975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1434d1fcc5d5bcc754b85a073431166"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#af1434d1fcc5d5bcc754b85a073431166">ilosc_wyswietlonych_pol</a>&#160;&#160;&#160;35</td></tr>
+<tr class="separator:af1434d1fcc5d5bcc754b85a073431166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af652084a7dd0d0f0b3be0a1a9f594102"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#af652084a7dd0d0f0b3be0a1a9f594102">odstep_gorny</a>&#160;&#160;&#160;30.0f</td></tr>
+<tr class="separator:af652084a7dd0d0f0b3be0a1a9f594102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5394010281f605364a1ba894f7cff9d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a5394010281f605364a1ba894f7cff9d9">odstep_boczny</a>&#160;&#160;&#160;30.0f</td></tr>
+<tr class="separator:a5394010281f605364a1ba894f7cff9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e8292f60f2dae6c160e5362f5451ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#ad9e8292f60f2dae6c160e5362f5451ed">minimalny_czas_przesuniecia_strzalu</a>&#160;&#160;&#160;0.3</td></tr>
+<tr class="separator:ad9e8292f60f2dae6c160e5362f5451ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9ecf44e28ba632d0d06b166078d112"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a9c9ecf44e28ba632d0d06b166078d112">minimalny_czas_pomiędzy_ruchem_postaci</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a9c9ecf44e28ba632d0d06b166078d112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d950c6fe25f3f323461ed56d290f18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a57d950c6fe25f3f323461ed56d290f18">zasieg_strzalu_pionowego</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a57d950c6fe25f3f323461ed56d290f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c2b6792c0f2adf9a573692acbdac1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a10c2b6792c0f2adf9a573692acbdac1f">zasieg_strzalu_poziomego</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a10c2b6792c0f2adf9a573692acbdac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69265d6715876b259228df060ae9c552"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a69265d6715876b259228df060ae9c552">maksymalne_cofniecie_gracza</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a69265d6715876b259228df060ae9c552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada893a170cd8e0c4c1a229ca14ffe8f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#ada893a170cd8e0c4c1a229ca14ffe8f3">podloga</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ada893a170cd8e0c4c1a229ca14ffe8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae2da36252a92cd4a0b4f484f3e68c07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#aae2da36252a92cd4a0b4f484f3e68c07">gracz_p</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:aae2da36252a92cd4a0b4f484f3e68c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7941ea1593522d8c35c223e5501b1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#ade7941ea1593522d8c35c223e5501b1b">gracz_k</a>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:ade7941ea1593522d8c35c223e5501b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06b8b6a29b283ad36d411dec5575a7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#ab06b8b6a29b283ad36d411dec5575a7b">pusta_przestrzen</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ab06b8b6a29b283ad36d411dec5575a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539139cb3280b16f54282622bafc6965"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a539139cb3280b16f54282622bafc6965">gora_gracza_p</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a539139cb3280b16f54282622bafc6965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6314caddf2561b91d58f4481328b376"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#ae6314caddf2561b91d58f4481328b376">dol_gracza_p</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:ae6314caddf2561b91d58f4481328b376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5408d0572c93e0fdd511713eeebb8f53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a5408d0572c93e0fdd511713eeebb8f53">gora_gracza_l</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:a5408d0572c93e0fdd511713eeebb8f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738bb796b6f3bebcf0aa593db870ee63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a738bb796b6f3bebcf0aa593db870ee63">dol_gracza_l</a>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:a738bb796b6f3bebcf0aa593db870ee63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d876e29ef609f2feff4c4295f9d8bb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a1d876e29ef609f2feff4c4295f9d8bb4">punkt</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a1d876e29ef609f2feff4c4295f9d8bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f46420318f4bbc0be684526e1e6ff5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a67f46420318f4bbc0be684526e1e6ff5">strzelec_poziomy_g</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a67f46420318f4bbc0be684526e1e6ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6458f93af868fb3c5dde02616ae4d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a5f6458f93af868fb3c5dde02616ae4d6">strzelec_poziomy_d</a>&#160;&#160;&#160;21</td></tr>
+<tr class="separator:a5f6458f93af868fb3c5dde02616ae4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e80be1abaa8052c12691aff51429bc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a1e80be1abaa8052c12691aff51429bc2">strzal_poziomy</a>&#160;&#160;&#160;22</td></tr>
+<tr class="separator:a1e80be1abaa8052c12691aff51429bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02f7192cb060f457334896273ee9745"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#af02f7192cb060f457334896273ee9745">strzelec_pionowy_g</a>&#160;&#160;&#160;23</td></tr>
+<tr class="separator:af02f7192cb060f457334896273ee9745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3da9a1ec62cafc8eedd5325fa849e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a6f3da9a1ec62cafc8eedd5325fa849e5">strzelec_pionowy_d</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:a6f3da9a1ec62cafc8eedd5325fa849e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d4f53dbfad7da3ac14e947bee63e67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a23d4f53dbfad7da3ac14e947bee63e67">strzal_pionowy</a>&#160;&#160;&#160;25</td></tr>
+<tr class="separator:a23d4f53dbfad7da3ac14e947bee63e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3dabc1c7a080344c90f3d617af690d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#ab3dabc1c7a080344c90f3d617af690d3">bomba</a>&#160;&#160;&#160;26</td></tr>
+<tr class="separator:ab3dabc1c7a080344c90f3d617af690d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c212b31f406b2a8393c2b6d8842d5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#a29c212b31f406b2a8393c2b6d8842d5b">latwy_punkty</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a29c212b31f406b2a8393c2b6d8842d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ile punktów to poszczególny tryb trudności  <a href="_constants_and_includes_8h.html#a29c212b31f406b2a8393c2b6d8842d5b">Więcej...</a><br /></td></tr>
+<tr class="separator:a29c212b31f406b2a8393c2b6d8842d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76289e9020da354e139aff5ed4b851d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_constants_and_includes_8h.html#ae76289e9020da354e139aff5ed4b851d">sredni_punkty</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:ae76289e9020da354e139aff5ed4b851d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="a96d178870536e685e623c13f044c5d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d178870536e685e623c13f044c5d9b">&#9670;&nbsp;</a></span>bezpieczne_pola</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define bezpieczne_pola&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3dabc1c7a080344c90f3d617af690d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3dabc1c7a080344c90f3d617af690d3">&#9670;&nbsp;</a></span>bomba</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define bomba&#160;&#160;&#160;26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af846190964e143c0c3050e898201108f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af846190964e143c0c3050e898201108f">&#9670;&nbsp;</a></span>dlugosc_planszy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dlugosc_planszy&#160;&#160;&#160;210</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a738bb796b6f3bebcf0aa593db870ee63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a738bb796b6f3bebcf0aa593db870ee63">&#9670;&nbsp;</a></span>dol_gracza_l</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dol_gracza_l&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6314caddf2561b91d58f4481328b376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6314caddf2561b91d58f4481328b376">&#9670;&nbsp;</a></span>dol_gracza_p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dol_gracza_p&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5408d0572c93e0fdd511713eeebb8f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5408d0572c93e0fdd511713eeebb8f53">&#9670;&nbsp;</a></span>gora_gracza_l</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gora_gracza_l&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a539139cb3280b16f54282622bafc6965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539139cb3280b16f54282622bafc6965">&#9670;&nbsp;</a></span>gora_gracza_p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gora_gracza_p&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade7941ea1593522d8c35c223e5501b1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7941ea1593522d8c35c223e5501b1b">&#9670;&nbsp;</a></span>gracz_k</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gracz_k&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae2da36252a92cd4a0b4f484f3e68c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae2da36252a92cd4a0b4f484f3e68c07">&#9670;&nbsp;</a></span>gracz_p</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define gracz_p&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1434d1fcc5d5bcc754b85a073431166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1434d1fcc5d5bcc754b85a073431166">&#9670;&nbsp;</a></span>ilosc_wyswietlonych_pol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ilosc_wyswietlonych_pol&#160;&#160;&#160;35</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29c212b31f406b2a8393c2b6d8842d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c212b31f406b2a8393c2b6d8842d5b">&#9670;&nbsp;</a></span>latwy_punkty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define latwy_punkty&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ile punktów to poszczególny tryb trudności </p>
+
+</div>
+</div>
+<a id="a69265d6715876b259228df060ae9c552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69265d6715876b259228df060ae9c552">&#9670;&nbsp;</a></span>maksymalne_cofniecie_gracza</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define maksymalne_cofniecie_gracza&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c2667abfe4a545afd7e5cd264a6fa01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2667abfe4a545afd7e5cd264a6fa01">&#9670;&nbsp;</a></span>maksymalny_odstep_const</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define maksymalny_odstep_const&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3759ee15baf052aec1bb1d92e4248c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3759ee15baf052aec1bb1d92e4248c2">&#9670;&nbsp;</a></span>minimalna_dlugosc_wyspy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define minimalna_dlugosc_wyspy&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c9ecf44e28ba632d0d06b166078d112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9ecf44e28ba632d0d06b166078d112">&#9670;&nbsp;</a></span>minimalny_czas_pomiędzy_ruchem_postaci</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define minimalny_czas_pomiędzy_ruchem_postaci&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9e8292f60f2dae6c160e5362f5451ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e8292f60f2dae6c160e5362f5451ed">&#9670;&nbsp;</a></span>minimalny_czas_przesuniecia_strzalu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define minimalny_czas_przesuniecia_strzalu&#160;&#160;&#160;0.3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5394010281f605364a1ba894f7cff9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5394010281f605364a1ba894f7cff9d9">&#9670;&nbsp;</a></span>odstep_boczny</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define odstep_boczny&#160;&#160;&#160;30.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af652084a7dd0d0f0b3be0a1a9f594102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af652084a7dd0d0f0b3be0a1a9f594102">&#9670;&nbsp;</a></span>odstep_gorny</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define odstep_gorny&#160;&#160;&#160;30.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada893a170cd8e0c4c1a229ca14ffe8f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada893a170cd8e0c4c1a229ca14ffe8f3">&#9670;&nbsp;</a></span>podloga</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define podloga&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d876e29ef609f2feff4c4295f9d8bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d876e29ef609f2feff4c4295f9d8bb4">&#9670;&nbsp;</a></span>punkt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define punkt&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab06b8b6a29b283ad36d411dec5575a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab06b8b6a29b283ad36d411dec5575a7b">&#9670;&nbsp;</a></span>pusta_przestrzen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define pusta_przestrzen&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42101ccbdecba77b849b64ef979bf782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42101ccbdecba77b849b64ef979bf782">&#9670;&nbsp;</a></span>roznica_wysokosci_pomiedzy_wyspami</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define roznica_wysokosci_pomiedzy_wyspami&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8033a2c122af01279c1e0fbb8323975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8033a2c122af01279c1e0fbb8323975">&#9670;&nbsp;</a></span>skok_const</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define skok_const&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae76289e9020da354e139aff5ed4b851d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae76289e9020da354e139aff5ed4b851d">&#9670;&nbsp;</a></span>sredni_punkty</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sredni_punkty&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23d4f53dbfad7da3ac14e947bee63e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d4f53dbfad7da3ac14e947bee63e67">&#9670;&nbsp;</a></span>strzal_pionowy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define strzal_pionowy&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e80be1abaa8052c12691aff51429bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e80be1abaa8052c12691aff51429bc2">&#9670;&nbsp;</a></span>strzal_poziomy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define strzal_poziomy&#160;&#160;&#160;22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f3da9a1ec62cafc8eedd5325fa849e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f3da9a1ec62cafc8eedd5325fa849e5">&#9670;&nbsp;</a></span>strzelec_pionowy_d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define strzelec_pionowy_d&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af02f7192cb060f457334896273ee9745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02f7192cb060f457334896273ee9745">&#9670;&nbsp;</a></span>strzelec_pionowy_g</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define strzelec_pionowy_g&#160;&#160;&#160;23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f6458f93af868fb3c5dde02616ae4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6458f93af868fb3c5dde02616ae4d6">&#9670;&nbsp;</a></span>strzelec_poziomy_d</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define strzelec_poziomy_d&#160;&#160;&#160;21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67f46420318f4bbc0be684526e1e6ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f46420318f4bbc0be684526e1e6ff5">&#9670;&nbsp;</a></span>strzelec_poziomy_g</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define strzelec_poziomy_g&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac002d4d920da2b6d643dd680de13c3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac002d4d920da2b6d643dd680de13c3a6">&#9670;&nbsp;</a></span>wysokosc_planszy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define wysokosc_planszy&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57d950c6fe25f3f323461ed56d290f18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d950c6fe25f3f323461ed56d290f18">&#9670;&nbsp;</a></span>zasieg_strzalu_pionowego</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define zasieg_strzalu_pionowego&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10c2b6792c0f2adf9a573692acbdac1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c2b6792c0f2adf9a573692acbdac1f">&#9670;&nbsp;</a></span>zasieg_strzalu_poziomego</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define zasieg_strzalu_poziomego&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

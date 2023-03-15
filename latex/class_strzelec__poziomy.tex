@@ -1,0 +1,96 @@
+\hypertarget{class_strzelec__poziomy}{}\doxysection{Dokumentacja klasy Strzelec\+\_\+poziomy}
+\label{class_strzelec__poziomy}\index{Strzelec\_poziomy@{Strzelec\_poziomy}}
+
+
+{\ttfamily \#include $<$Strzelec\+\_\+poziomy.\+h$>$}
+
+Diagram dziedziczenia dla Strzelec\+\_\+poziomy\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_strzelec__poziomy}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_strzelec__poziomy_a357913fba63c7befe89c831ac7ccd0d9}{Strzelec\+\_\+poziomy}} (int \mbox{\hyperlink{class_postac_a5a2397cebdac57989a205e18b9bb40ba}{x}}, int \mbox{\hyperlink{class_postac_a29512919cf0f78d4685e911c257e273b}{y}}, std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela)
+\begin{DoxyCompactList}\small\item\em Konstruktor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_strzelec__poziomy_a92b70808ac2ef0e708cda3fd267656a8}{wykonaj\+\_\+ruch}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela, bool \&koniec)
+\begin{DoxyCompactList}\small\item\em Wykonany zostaje ruch odpowadający Strzelcowi poziomemu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_strzelec__poziomy_a710e19f96e0b8be1fd944f7ace9b1306}{smierc}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela)
+\begin{DoxyCompactList}\small\item\em Śmierć Strzelca poziomego, usunięcie z planszy zajmowanych pól oraz strzału znajdującego się w locie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Dziedziczy po klasie \mbox{\hyperlink{class_postac}{Postac}}. Jeśli zostanie stworzony obiekt klasy \mbox{\hyperlink{class_strzelec__poziomy}{Strzelec\+\_\+poziomy}}, to będą wykonywane zdefiniowane tutaj ruchy i śmierć. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_strzelec__poziomy_a357913fba63c7befe89c831ac7ccd0d9}\label{class_strzelec__poziomy_a357913fba63c7befe89c831ac7ccd0d9}} 
+\index{Strzelec\_poziomy@{Strzelec\_poziomy}!Strzelec\_poziomy@{Strzelec\_poziomy}}
+\index{Strzelec\_poziomy@{Strzelec\_poziomy}!Strzelec\_poziomy@{Strzelec\_poziomy}}
+\doxysubsubsection{\texorpdfstring{Strzelec\_poziomy()}{Strzelec\_poziomy()}}
+{\footnotesize\ttfamily Strzelec\+\_\+poziomy\+::\+Strzelec\+\_\+poziomy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela }\end{DoxyParamCaption})}
+
+
+
+Konstruktor 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & położenie danego przeciwnika na osi x\\
+\hline
+{\em y} & położenie danego przeciwnika na osi y\\
+\hline
+{\em tabela} & jako referencja przekazywana jest cała tabela, ponieważ zostanie w niej umieszczony przeciwnik\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_strzelec__poziomy_a710e19f96e0b8be1fd944f7ace9b1306}\label{class_strzelec__poziomy_a710e19f96e0b8be1fd944f7ace9b1306}} 
+\index{Strzelec\_poziomy@{Strzelec\_poziomy}!smierc@{smierc}}
+\index{smierc@{smierc}!Strzelec\_poziomy@{Strzelec\_poziomy}}
+\doxysubsubsection{\texorpdfstring{smierc()}{smierc()}}
+{\footnotesize\ttfamily void Strzelec\+\_\+poziomy\+::smierc (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Śmierć Strzelca poziomego, usunięcie z planszy zajmowanych pól oraz strzału znajdującego się w locie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \mbox{\hyperlink{class_postac_aa8b87a881ff95588ad6ab62dd04c4668}{Postac}}.
+
+\mbox{\Hypertarget{class_strzelec__poziomy_a92b70808ac2ef0e708cda3fd267656a8}\label{class_strzelec__poziomy_a92b70808ac2ef0e708cda3fd267656a8}} 
+\index{Strzelec\_poziomy@{Strzelec\_poziomy}!wykonaj\_ruch@{wykonaj\_ruch}}
+\index{wykonaj\_ruch@{wykonaj\_ruch}!Strzelec\_poziomy@{Strzelec\_poziomy}}
+\doxysubsubsection{\texorpdfstring{wykonaj\_ruch()}{wykonaj\_ruch()}}
+{\footnotesize\ttfamily void Strzelec\+\_\+poziomy\+::wykonaj\+\_\+ruch (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela,  }\item[{bool \&}]{koniec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Wykonany zostaje ruch odpowadający Strzelcowi poziomemu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+{\em koniec} & referencja na pole typu bool, jeśli zajdzie taka potrzeba (strzał dotknie gracza), to gra jest kończona\\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \mbox{\hyperlink{class_postac_a7bd99b2ccf179eb82d34d5fd677255cf}{Postac}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_strzelec__poziomy_8h}{Strzelec\+\_\+poziomy.\+h}}\item 
+\mbox{\hyperlink{_strzelec__poziomy_8cpp}{Strzelec\+\_\+poziomy.\+cpp}}\end{DoxyCompactItemize}

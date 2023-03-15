@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zmodyfikowana gra Mario: Plik źródłowy Rekord.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zmodyfikowana gra Mario
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Rekord.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_rekord_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_constants_and_includes_8h.html">ConstantsAndIncludes.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_rekord.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rekord.html">Rekord</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_rekord.html#ac08a5d444a025e171ef273f78736af6e">   11</a></span>&#160;    std::string <a class="code" href="class_rekord.html#ac08a5d444a025e171ef273f78736af6e">nazwa</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_rekord.html#aa35103a676a152c3765fc9952c9c3150">   15</a></span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_rekord.html#aa35103a676a152c3765fc9952c9c3150">czas</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_rekord.html#aafa3b57ef3985bbfd2a4cea3eb8ceace">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_rekord.html#aafa3b57ef3985bbfd2a4cea3eb8ceace">zdobyte_punkty</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_rekord.html#ab4e5bf7bd146504f467a94c4a7a6685c">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_rekord.html#ab4e5bf7bd146504f467a94c4a7a6685c">punkty_do_zdobycia</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_rekord.html#a6012b01fe420fc5e0e193f9816a89218">Rekord</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_rekord.html#a6012b01fe420fc5e0e193f9816a89218">Rekord</a>(std::string <a class="code" href="class_rekord.html#ac08a5d444a025e171ef273f78736af6e">nazwa</a>, <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_rekord.html#aa35103a676a152c3765fc9952c9c3150">czas</a>, <span class="keywordtype">int</span> <a class="code" href="class_rekord.html#aafa3b57ef3985bbfd2a4cea3eb8ceace">zdobyte_punkty</a>, <span class="keywordtype">int</span> <a class="code" href="class_rekord.html#ab4e5bf7bd146504f467a94c4a7a6685c">punkty_do_zdobycia</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::string <a class="code" href="class_rekord.html#afc6d831954abccf6ff86feb682491911">zwroc_nazwe</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_rekord.html#a579a6a99ff2f7c7d87c63a19d7b44a67">zwroc_czas</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_rekord.html#a098b2df42fead65acd26c0070e5f5158">zwroc_zdobyte_punkty</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_rekord.html#acac6590000c36c18e38412d4b7bc2358">zwroc_punkty_do_zdobycia</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="class_rekord.html#a4239510d1e5d50f1027fe09075ea8837">operator&lt;</a>(<span class="keyword">const</span> <a class="code" href="class_rekord.html">Rekord</a>&amp; l, <span class="keyword">const</span> <a class="code" href="class_rekord.html">Rekord</a>&amp; p);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="class_rekord.html#a7441d91f982783efdc1b2656d55424e8">operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="class_rekord.html">Rekord</a>&amp; l, <span class="keyword">const</span> <a class="code" href="class_rekord.html">Rekord</a>&amp; p);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="class_rekord.html#ac75d6af77863bbdf2ddfb85f60e63d36">operator&lt;&lt;</a>(std::ostream&amp; str, <span class="keyword">const</span> <a class="code" href="class_rekord.html">Rekord</a>&amp; rekord);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">friend</span> std::istream&amp; <a class="code" href="class_rekord.html#aec9523e6544ea6c6765ba0f12ca5be39">operator&gt;&gt;</a>(std::istream&amp; str, <a class="code" href="class_rekord.html">Rekord</a>&amp; rekord);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_rekord_html_afc6d831954abccf6ff86feb682491911"><div class="ttname"><a href="class_rekord.html#afc6d831954abccf6ff86feb682491911">Rekord::zwroc_nazwe</a></div><div class="ttdeci">std::string zwroc_nazwe()</div><div class="ttdoc">Metoda zwracająca nazwę</div><div class="ttdef"><b>Definition:</b> Rekord.cpp:3</div></div>
+<div class="ttc" id="aclass_rekord_html_a4239510d1e5d50f1027fe09075ea8837"><div class="ttname"><a href="class_rekord.html#a4239510d1e5d50f1027fe09075ea8837">Rekord::operator&lt;</a></div><div class="ttdeci">friend bool operator&lt;(const Rekord &amp;l, const Rekord &amp;p)</div><div class="ttdef"><b>Definition:</b> Rekord.cpp:26</div></div>
+<div class="ttc" id="aclass_rekord_html_a6012b01fe420fc5e0e193f9816a89218"><div class="ttname"><a href="class_rekord.html#a6012b01fe420fc5e0e193f9816a89218">Rekord::Rekord</a></div><div class="ttdeci">Rekord()</div><div class="ttdoc">Konstruktor</div><div class="ttdef"><b>Definition:</b> Rekord.cpp:45</div></div>
+<div class="ttc" id="aclass_rekord_html_ac75d6af77863bbdf2ddfb85f60e63d36"><div class="ttname"><a href="class_rekord.html#ac75d6af77863bbdf2ddfb85f60e63d36">Rekord::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;str, const Rekord &amp;rekord)</div><div class="ttdef"><b>Definition:</b> Rekord.cpp:16</div></div>
+<div class="ttc" id="aclass_rekord_html_a098b2df42fead65acd26c0070e5f5158"><div class="ttname"><a href="class_rekord.html#a098b2df42fead65acd26c0070e5f5158">Rekord::zwroc_zdobyte_punkty</a></div><div class="ttdeci">int zwroc_zdobyte_punkty()</div><div class="ttdoc">metoda zwracająca ilość zdobytych przez gracza punktów</div><div class="ttdef"><b>Definition:</b> Rekord.cpp:9</div></div>
+<div class="ttc" id="aclass_rekord_html_a7441d91f982783efdc1b2656d55424e8"><div class="ttname"><a href="class_rekord.html#a7441d91f982783efdc1b2656d55424e8">Rekord::operator&gt;</a></div><div class="ttdeci">friend bool operator&gt;(const Rekord &amp;l, const Rekord &amp;p)</div><div class="ttdef"><b>Definition:</b> Rekord.cpp:32</div></div>
+<div class="ttc" id="aclass_rekord_html_acac6590000c36c18e38412d4b7bc2358"><div class="ttname"><a href="class_rekord.html#acac6590000c36c18e38412d4b7bc2358">Rekord::zwroc_punkty_do_zdobycia</a></div><div class="ttdeci">int zwroc_punkty_do_zdobycia()</div><div class="ttdoc">metoda zwracająca cel punktów ustawiony przez gracza na samym początku</div><div class="ttdef"><b>Definition:</b> Rekord.cpp:12</div></div>
+<div class="ttc" id="aclass_rekord_html_aafa3b57ef3985bbfd2a4cea3eb8ceace"><div class="ttname"><a href="class_rekord.html#aafa3b57ef3985bbfd2a4cea3eb8ceace">Rekord::zdobyte_punkty</a></div><div class="ttdeci">int zdobyte_punkty</div><div class="ttdoc">ilość zdobytych przez gracza punktów</div><div class="ttdef"><b>Definition:</b> Rekord.h:19</div></div>
+<div class="ttc" id="aclass_rekord_html_ab4e5bf7bd146504f467a94c4a7a6685c"><div class="ttname"><a href="class_rekord.html#ab4e5bf7bd146504f467a94c4a7a6685c">Rekord::punkty_do_zdobycia</a></div><div class="ttdeci">int punkty_do_zdobycia</div><div class="ttdoc">cel punktów ustawiony przez gracza na samym początku</div><div class="ttdef"><b>Definition:</b> Rekord.h:23</div></div>
+<div class="ttc" id="aclass_rekord_html_a579a6a99ff2f7c7d87c63a19d7b44a67"><div class="ttname"><a href="class_rekord.html#a579a6a99ff2f7c7d87c63a19d7b44a67">Rekord::zwroc_czas</a></div><div class="ttdeci">long long zwroc_czas()</div><div class="ttdoc">Metoda zwracająca czas gry w sekundach</div><div class="ttdef"><b>Definition:</b> Rekord.cpp:6</div></div>
+<div class="ttc" id="aclass_rekord_html_aec9523e6544ea6c6765ba0f12ca5be39"><div class="ttname"><a href="class_rekord.html#aec9523e6544ea6c6765ba0f12ca5be39">Rekord::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;str, Rekord &amp;rekord)</div><div class="ttdef"><b>Definition:</b> Rekord.cpp:21</div></div>
+<div class="ttc" id="a_constants_and_includes_8h_html"><div class="ttname"><a href="_constants_and_includes_8h.html">ConstantsAndIncludes.h</a></div></div>
+<div class="ttc" id="aclass_rekord_html_aa35103a676a152c3765fc9952c9c3150"><div class="ttname"><a href="class_rekord.html#aa35103a676a152c3765fc9952c9c3150">Rekord::czas</a></div><div class="ttdeci">long long czas</div><div class="ttdoc">całkowity czas gry w sekundach</div><div class="ttdef"><b>Definition:</b> Rekord.h:15</div></div>
+<div class="ttc" id="aclass_rekord_html"><div class="ttname"><a href="class_rekord.html">Rekord</a></div><div class="ttdef"><b>Definition:</b> Rekord.h:7</div></div>
+<div class="ttc" id="aclass_rekord_html_ac08a5d444a025e171ef273f78736af6e"><div class="ttname"><a href="class_rekord.html#ac08a5d444a025e171ef273f78736af6e">Rekord::nazwa</a></div><div class="ttdeci">std::string nazwa</div><div class="ttdoc">nazwa użytkownika, jej podanie jest opcjonalne</div><div class="ttdef"><b>Definition:</b> Rekord.h:11</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,156 @@
+\hypertarget{class_przeciwnicy}{}\doxysection{Dokumentacja klasy Przeciwnicy}
+\label{class_przeciwnicy}\index{Przeciwnicy@{Przeciwnicy}}
+
+
+{\ttfamily \#include $<$Przeciwnicy.\+h$>$}
+
+Diagram dziedziczenia dla Przeciwnicy\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_przeciwnicy}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_przeciwnicy_a121dc410b70980fd23e3a3955f0fad58}{Przeciwnicy}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_przeciwnicy_aa0e740a96702a70fe449a5797f16e44d}{$\sim$\+Przeciwnicy}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor zwalniający całą zajętą przez listę pamięć \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_przeciwnicy_a8a9c371f3c145d0114ab908ac78d9496}{usmierc\+\_\+przeciwnika}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela, int x, int y)
+\begin{DoxyCompactList}\small\item\em po stanięciu na jakimś polu zajmowanym przez przeciwnika znika on z planszy wraz ze swoimi strzałami \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_przeciwnicy_a4a0ae464187d29c822e4d874a777d025}{usun\+\_\+ewentualne\+\_\+potwory}} (int x)
+\begin{DoxyCompactList}\small\item\em usuwa z listy wszystkie potwory znajdujące się na danym polu x \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_przeciwnicy_ae4b12d85eb178b0c0da1c2042b8bf957}{wykonaj\+\_\+ruchy\+\_\+przeciwnikow}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela, bool \&koniec)
+\begin{DoxyCompactList}\small\item\em wykonanie ruchów wszystkich przeciwników znajdujących się na liście \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_przeciwnicy_a95b941102a75464256025c19e6d85fd1}{potencjalne\+\_\+stworzenie\+\_\+potworow}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela, int x, std\+::mt19937 \&gen)
+\begin{DoxyCompactList}\small\item\em Na przekazanej jako argument pozycji x szuka podłóg, czyli potencjalnych miejsc na stworzenie przeciwników lub monety. Gdy podłoga zostanie znaleziona, to jest szansa na stworzenie tam przeciwnika lub postawienia monety, w zależności od \char`\"{}wylosowanej\char`\"{} wartości. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_postac}{Postac}} $>$ $>$ \mbox{\hyperlink{class_przeciwnicy_ac1b3906673f46bcac3c33208efd574f5}{potwory}}
+\begin{DoxyCompactList}\small\item\em potwory w liscie umieszczane są po kolei, w zależności od położenia x \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa umożliwiająca dodanie nowych przeciwników, w jej polu jest lista zawierająca wszystkich aktualnych przeciwników. Po uśmierceniu danego przeciwnika znajduje się on dalej w liście, zostaje usunięty dopiero w chwili, gdy pole przez niego zajmowane stanie się niewidoczne dla gracza. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_przeciwnicy_a121dc410b70980fd23e3a3955f0fad58}\label{class_przeciwnicy_a121dc410b70980fd23e3a3955f0fad58}} 
+\index{Przeciwnicy@{Przeciwnicy}!Przeciwnicy@{Przeciwnicy}}
+\index{Przeciwnicy@{Przeciwnicy}!Przeciwnicy@{Przeciwnicy}}
+\doxysubsubsection{\texorpdfstring{Przeciwnicy()}{Przeciwnicy()}}
+{\footnotesize\ttfamily Przeciwnicy\+::\+Przeciwnicy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Konstruktor 
+
+\mbox{\Hypertarget{class_przeciwnicy_aa0e740a96702a70fe449a5797f16e44d}\label{class_przeciwnicy_aa0e740a96702a70fe449a5797f16e44d}} 
+\index{Przeciwnicy@{Przeciwnicy}!````~Przeciwnicy@{$\sim$Przeciwnicy}}
+\index{````~Przeciwnicy@{$\sim$Przeciwnicy}!Przeciwnicy@{Przeciwnicy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Przeciwnicy()}{~Przeciwnicy()}}
+{\footnotesize\ttfamily Przeciwnicy\+::$\sim$\+Przeciwnicy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Destruktor zwalniający całą zajętą przez listę pamięć 
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_przeciwnicy_a95b941102a75464256025c19e6d85fd1}\label{class_przeciwnicy_a95b941102a75464256025c19e6d85fd1}} 
+\index{Przeciwnicy@{Przeciwnicy}!potencjalne\_stworzenie\_potworow@{potencjalne\_stworzenie\_potworow}}
+\index{potencjalne\_stworzenie\_potworow@{potencjalne\_stworzenie\_potworow}!Przeciwnicy@{Przeciwnicy}}
+\doxysubsubsection{\texorpdfstring{potencjalne\_stworzenie\_potworow()}{potencjalne\_stworzenie\_potworow()}}
+{\footnotesize\ttfamily void Przeciwnicy\+::potencjalne\+\_\+stworzenie\+\_\+potworow (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela,  }\item[{int}]{x,  }\item[{std\+::mt19937 \&}]{gen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Na przekazanej jako argument pozycji x szuka podłóg, czyli potencjalnych miejsc na stworzenie przeciwników lub monety. Gdy podłoga zostanie znaleziona, to jest szansa na stworzenie tam przeciwnika lub postawienia monety, w zależności od \char`\"{}wylosowanej\char`\"{} wartości. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+{\em x} & współrzędna x\\
+\hline
+{\em gen} & przekazany przez referencję generator\\
+\hline
+\end{DoxyParams}
+stworzenie Strzelca pionowego
+
+stworzenie Strzelca poziomego
+
+stworzenie Bomby
+
+umieszczenie monety\mbox{\Hypertarget{class_przeciwnicy_a8a9c371f3c145d0114ab908ac78d9496}\label{class_przeciwnicy_a8a9c371f3c145d0114ab908ac78d9496}} 
+\index{Przeciwnicy@{Przeciwnicy}!usmierc\_przeciwnika@{usmierc\_przeciwnika}}
+\index{usmierc\_przeciwnika@{usmierc\_przeciwnika}!Przeciwnicy@{Przeciwnicy}}
+\doxysubsubsection{\texorpdfstring{usmierc\_przeciwnika()}{usmierc\_przeciwnika()}}
+{\footnotesize\ttfamily void Przeciwnicy\+::usmierc\+\_\+przeciwnika (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+po stanięciu na jakimś polu zajmowanym przez przeciwnika znika on z planszy wraz ze swoimi strzałami 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+{\em x} & położenie danego przeciwnika na osi x\\
+\hline
+{\em y} & położenie danego przeciwnika na osi y\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_przeciwnicy_a4a0ae464187d29c822e4d874a777d025}\label{class_przeciwnicy_a4a0ae464187d29c822e4d874a777d025}} 
+\index{Przeciwnicy@{Przeciwnicy}!usun\_ewentualne\_potwory@{usun\_ewentualne\_potwory}}
+\index{usun\_ewentualne\_potwory@{usun\_ewentualne\_potwory}!Przeciwnicy@{Przeciwnicy}}
+\doxysubsubsection{\texorpdfstring{usun\_ewentualne\_potwory()}{usun\_ewentualne\_potwory()}}
+{\footnotesize\ttfamily void Przeciwnicy\+::usun\+\_\+ewentualne\+\_\+potwory (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+usuwa z listy wszystkie potwory znajdujące się na danym polu x 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & współrzędna x\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_przeciwnicy_ae4b12d85eb178b0c0da1c2042b8bf957}\label{class_przeciwnicy_ae4b12d85eb178b0c0da1c2042b8bf957}} 
+\index{Przeciwnicy@{Przeciwnicy}!wykonaj\_ruchy\_przeciwnikow@{wykonaj\_ruchy\_przeciwnikow}}
+\index{wykonaj\_ruchy\_przeciwnikow@{wykonaj\_ruchy\_przeciwnikow}!Przeciwnicy@{Przeciwnicy}}
+\doxysubsubsection{\texorpdfstring{wykonaj\_ruchy\_przeciwnikow()}{wykonaj\_ruchy\_przeciwnikow()}}
+{\footnotesize\ttfamily void Przeciwnicy\+::wykonaj\+\_\+ruchy\+\_\+przeciwnikow (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela,  }\item[{bool \&}]{koniec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+wykonanie ruchów wszystkich przeciwników znajdujących się na liście 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+{\em koniec} & referencja na pole typu bool, jeśli zajdzie taka potrzeba (strzał dotknie gracza), to gra jest kończona\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_przeciwnicy_ac1b3906673f46bcac3c33208efd574f5}\label{class_przeciwnicy_ac1b3906673f46bcac3c33208efd574f5}} 
+\index{Przeciwnicy@{Przeciwnicy}!potwory@{potwory}}
+\index{potwory@{potwory}!Przeciwnicy@{Przeciwnicy}}
+\doxysubsubsection{\texorpdfstring{potwory}{potwory}}
+{\footnotesize\ttfamily std\+::list$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_postac}{Postac}}$>$ $>$ Przeciwnicy\+::potwory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+potwory w liscie umieszczane są po kolei, w zależności od położenia x 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_przeciwnicy_8h}{Przeciwnicy.\+h}}\item 
+\mbox{\hyperlink{_przeciwnicy_8cpp}{Przeciwnicy.\+cpp}}\end{DoxyCompactItemize}

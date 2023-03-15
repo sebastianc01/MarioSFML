@@ -1,0 +1,78 @@
+\hypertarget{class_gra}{}\doxysection{Dokumentacja klasy Gra}
+\label{class_gra}\index{Gra@{Gra}}
+
+
+{\ttfamily \#include $<$Gra.\+h$>$}
+
+Diagram dziedziczenia dla Gra\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_gra}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gra_a85a3fce34f62b6e87fbe6e9cf2419ca7}{Gra}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gra_a4fe2922383c14b00fe5aa28de59ed53d}{przebieg}} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em metoda realizująca przebieg całej gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_gra_aec1b8fcc4bf67bcb0cb97f28854d3095}{Mario}}
+\begin{DoxyCompactList}\small\item\em Klasa jest wykorzystywana w klasie \mbox{\hyperlink{class_mario}{Mario}}, ma to na celu możliwość ponownej gry bez konieczności ponownego uruchamiania programu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa \mbox{\hyperlink{class_gra}{Gra}} odpowiada za złożenie trzech kluczowych fragmentów gry. Dziedziczy klasy \mbox{\hyperlink{class_menu}{Menu}}, \mbox{\hyperlink{class_plansza}{Plansza}} i \mbox{\hyperlink{class_zapis}{Zapis}}. \mbox{\hyperlink{class_menu}{Menu}} pozwala na wybranie ilości punktów do zdobycia. W klasie \mbox{\hyperlink{class_plansza}{Plansza}} znajduje się przebieg gry. Natomiast \mbox{\hyperlink{class_zapis}{Zapis}} odpowiada za zapis rezultatu gry. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_gra_a85a3fce34f62b6e87fbe6e9cf2419ca7}\label{class_gra_a85a3fce34f62b6e87fbe6e9cf2419ca7}} 
+\index{Gra@{Gra}!Gra@{Gra}}
+\index{Gra@{Gra}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{Gra()}{Gra()}}
+{\footnotesize\ttfamily Gra\+::\+Gra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Konstruktor 
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_gra_a4fe2922383c14b00fe5aa28de59ed53d}\label{class_gra_a4fe2922383c14b00fe5aa28de59ed53d}} 
+\index{Gra@{Gra}!przebieg@{przebieg}}
+\index{przebieg@{przebieg}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{przebieg()}{przebieg()}}
+{\footnotesize\ttfamily void Gra\+::przebieg (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+metoda realizująca przebieg całej gry 
+
+
+\begin{DoxyParams}{Parametry}
+{\em window} & przekazywane jest jako parametr aktualnie używane okno\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja przyjaciół i funkcji związanych}
+\mbox{\Hypertarget{class_gra_aec1b8fcc4bf67bcb0cb97f28854d3095}\label{class_gra_aec1b8fcc4bf67bcb0cb97f28854d3095}} 
+\index{Gra@{Gra}!Mario@{Mario}}
+\index{Mario@{Mario}!Gra@{Gra}}
+\doxysubsubsection{\texorpdfstring{Mario}{Mario}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_mario}{Mario}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Klasa jest wykorzystywana w klasie \mbox{\hyperlink{class_mario}{Mario}}, ma to na celu możliwość ponownej gry bez konieczności ponownego uruchamiania programu 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_gra_8h}{Gra.\+h}}\item 
+\mbox{\hyperlink{_gra_8cpp}{Gra.\+cpp}}\end{DoxyCompactItemize}

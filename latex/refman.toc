@@ -1,0 +1,208 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}
+\contentsline {chapter}{\numberline {1}Indeks hierarchiczny}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Hierarchia klas}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Indeks klas}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lista klas}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Indeks plików}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lista plików}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Dokumentacja klas}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dokumentacja klasy Bomba}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Opis szczegółowy}{7}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Dokumentacja konstruktora i destruktora}{7}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Bomba()}{8}{subsubsection.4.1.2.1}%
+\contentsline {subsection}{\numberline {4.1.3}Dokumentacja funkcji składowych}{9}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}smierc()}{9}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}wykonaj\_ruch()}{9}{subsubsection.4.1.3.2}%
+\contentsline {section}{\numberline {4.2}Dokumentacja klasy Gra}{10}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Opis szczegółowy}{10}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Dokumentacja konstruktora i destruktora}{10}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Gra()}{10}{subsubsection.4.2.2.1}%
+\contentsline {subsection}{\numberline {4.2.3}Dokumentacja funkcji składowych}{11}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}przebieg()}{11}{subsubsection.4.2.3.1}%
+\contentsline {subsection}{\numberline {4.2.4}Dokumentacja przyjaciół i funkcji związanych}{12}{subsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.4.1}Mario}{12}{subsubsection.4.2.4.1}%
+\contentsline {section}{\numberline {4.3}Dokumentacja klasy Mario}{12}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Opis szczegółowy}{12}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Dokumentacja funkcji składowych}{12}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}przebieg()}{13}{subsubsection.4.3.2.1}%
+\contentsline {section}{\numberline {4.4}Dokumentacja klasy Menu}{13}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Opis szczegółowy}{13}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Dokumentacja konstruktora i destruktora}{13}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Menu()}{13}{subsubsection.4.4.2.1}%
+\contentsline {subsection}{\numberline {4.4.3}Dokumentacja funkcji składowych}{14}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}wyswietl()}{14}{subsubsection.4.4.3.1}%
+\contentsline {section}{\numberline {4.5}Dokumentacja klasy Plansza}{15}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Opis szczegółowy}{17}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Dokumentacja konstruktora i destruktora}{17}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}Plansza()}{17}{subsubsection.4.5.2.1}%
+\contentsline {subsection}{\numberline {4.5.3}Dokumentacja funkcji składowych}{17}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}czy\_postac\_jest\_w\_danej\_kolumnie()}{17}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}fizyka\_postaci\_pion()}{17}{subsubsection.4.5.3.2}%
+\contentsline {subsubsection}{\numberline {4.5.3.3}LadowanieTekstur()}{18}{subsubsection.4.5.3.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.4}maksymalny\_odstep()}{18}{subsubsection.4.5.3.4}%
+\contentsline {subsubsection}{\numberline {4.5.3.5}ruch\_w\_lewo()}{18}{subsubsection.4.5.3.5}%
+\contentsline {subsubsection}{\numberline {4.5.3.6}ruch\_w\_prawo()}{19}{subsubsection.4.5.3.6}%
+\contentsline {subsubsection}{\numberline {4.5.3.7}Rysowanie\_czesci\_planszy()}{19}{subsubsection.4.5.3.7}%
+\contentsline {subsubsection}{\numberline {4.5.3.8}smierc()}{20}{subsubsection.4.5.3.8}%
+\contentsline {subsubsection}{\numberline {4.5.3.9}sprawdzenie\_pola()}{20}{subsubsection.4.5.3.9}%
+\contentsline {subsubsection}{\numberline {4.5.3.10}stworzenie\_wyspy()}{20}{subsubsection.4.5.3.10}%
+\contentsline {subsubsection}{\numberline {4.5.3.11}wykonanie\_skoku()}{21}{subsubsection.4.5.3.11}%
+\contentsline {subsubsection}{\numberline {4.5.3.12}wypelnienie\_czesci\_tablicy()}{21}{subsubsection.4.5.3.12}%
+\contentsline {subsubsection}{\numberline {4.5.3.13}wypelnienie\_mindlwys()}{21}{subsubsection.4.5.3.13}%
+\contentsline {subsubsection}{\numberline {4.5.3.14}wypelnienie\_poczatkowych\_pol()}{22}{subsubsection.4.5.3.14}%
+\contentsline {subsubsection}{\numberline {4.5.3.15}wypelnienie\_pola()}{22}{subsubsection.4.5.3.15}%
+\contentsline {subsubsection}{\numberline {4.5.3.16}wyswietlenie()}{23}{subsubsection.4.5.3.16}%
+\contentsline {subsection}{\numberline {4.5.4}Dokumentacja atrybutów składowych}{23}{subsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {4.5.4.1}aktualna\_ilosc\_punktow}{23}{subsubsection.4.5.4.1}%
+\contentsline {subsubsection}{\numberline {4.5.4.2}aktualny}{23}{subsubsection.4.5.4.2}%
+\contentsline {subsubsection}{\numberline {4.5.4.3}bariera}{23}{subsubsection.4.5.4.3}%
+\contentsline {subsubsection}{\numberline {4.5.4.4}generowanie}{23}{subsubsection.4.5.4.4}%
+\contentsline {subsubsection}{\numberline {4.5.4.5}iloscPunktow}{24}{subsubsection.4.5.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.4.6}koniec}{24}{subsubsection.4.5.4.6}%
+\contentsline {subsubsection}{\numberline {4.5.4.7}skok}{24}{subsubsection.4.5.4.7}%
+\contentsline {subsubsection}{\numberline {4.5.4.8}start}{24}{subsubsection.4.5.4.8}%
+\contentsline {subsubsection}{\numberline {4.5.4.9}tabela}{24}{subsubsection.4.5.4.9}%
+\contentsline {section}{\numberline {4.6}Dokumentacja klasy Postac}{25}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Opis szczegółowy}{25}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Dokumentacja konstruktora i destruktora}{26}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}Postac()}{26}{subsubsection.4.6.2.1}%
+\contentsline {subsection}{\numberline {4.6.3}Dokumentacja funkcji składowych}{26}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}smierc()}{26}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}sprawdzenie\_pola()}{26}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}wykonaj\_ruch()}{27}{subsubsection.4.6.3.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.4}zwroc\_x()}{27}{subsubsection.4.6.3.4}%
+\contentsline {subsubsection}{\numberline {4.6.3.5}zwroc\_y()}{28}{subsubsection.4.6.3.5}%
+\contentsline {subsection}{\numberline {4.6.4}Dokumentacja przyjaciół i funkcji związanych}{28}{subsection.4.6.4}%
+\contentsline {subsubsection}{\numberline {4.6.4.1}Przeciwnicy}{28}{subsubsection.4.6.4.1}%
+\contentsline {subsection}{\numberline {4.6.5}Dokumentacja atrybutów składowych}{28}{subsection.4.6.5}%
+\contentsline {subsubsection}{\numberline {4.6.5.1}czas}{28}{subsubsection.4.6.5.1}%
+\contentsline {subsubsection}{\numberline {4.6.5.2}x}{28}{subsubsection.4.6.5.2}%
+\contentsline {subsubsection}{\numberline {4.6.5.3}y}{28}{subsubsection.4.6.5.3}%
+\contentsline {section}{\numberline {4.7}Dokumentacja klasy Przeciwnicy}{29}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Opis szczegółowy}{29}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Dokumentacja konstruktora i destruktora}{29}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}Przeciwnicy()}{30}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}$\sim $Przeciwnicy()}{30}{subsubsection.4.7.2.2}%
+\contentsline {subsection}{\numberline {4.7.3}Dokumentacja funkcji składowych}{30}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}potencjalne\_stworzenie\_potworow()}{30}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}usmierc\_przeciwnika()}{30}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}usun\_ewentualne\_potwory()}{31}{subsubsection.4.7.3.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.4}wykonaj\_ruchy\_przeciwnikow()}{31}{subsubsection.4.7.3.4}%
+\contentsline {subsection}{\numberline {4.7.4}Dokumentacja atrybutów składowych}{31}{subsection.4.7.4}%
+\contentsline {subsubsection}{\numberline {4.7.4.1}potwory}{31}{subsubsection.4.7.4.1}%
+\contentsline {section}{\numberline {4.8}Dokumentacja klasy Rekord}{32}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Opis szczegółowy}{32}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Dokumentacja konstruktora i destruktora}{32}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}Rekord()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{33}{subsubsection.4.8.2.1}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}Rekord()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{33}{subsubsection.4.8.2.2}%
+\contentsline {subsection}{\numberline {4.8.3}Dokumentacja funkcji składowych}{33}{subsection.4.8.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.1}zwroc\_czas()}{33}{subsubsection.4.8.3.1}%
+\contentsline {subsubsection}{\numberline {4.8.3.2}zwroc\_nazwe()}{33}{subsubsection.4.8.3.2}%
+\contentsline {subsubsection}{\numberline {4.8.3.3}zwroc\_punkty\_do\_zdobycia()}{34}{subsubsection.4.8.3.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.4}zwroc\_zdobyte\_punkty()}{34}{subsubsection.4.8.3.4}%
+\contentsline {subsection}{\numberline {4.8.4}Dokumentacja przyjaciół i funkcji związanych}{34}{subsection.4.8.4}%
+\contentsline {subsubsection}{\numberline {4.8.4.1}operator$<$}{34}{subsubsection.4.8.4.1}%
+\contentsline {subsubsection}{\numberline {4.8.4.2}operator$<$$<$}{34}{subsubsection.4.8.4.2}%
+\contentsline {subsubsection}{\numberline {4.8.4.3}operator$>$}{34}{subsubsection.4.8.4.3}%
+\contentsline {subsubsection}{\numberline {4.8.4.4}operator$>$$>$}{35}{subsubsection.4.8.4.4}%
+\contentsline {subsection}{\numberline {4.8.5}Dokumentacja atrybutów składowych}{35}{subsection.4.8.5}%
+\contentsline {subsubsection}{\numberline {4.8.5.1}czas}{35}{subsubsection.4.8.5.1}%
+\contentsline {subsubsection}{\numberline {4.8.5.2}nazwa}{35}{subsubsection.4.8.5.2}%
+\contentsline {subsubsection}{\numberline {4.8.5.3}punkty\_do\_zdobycia}{35}{subsubsection.4.8.5.3}%
+\contentsline {subsubsection}{\numberline {4.8.5.4}zdobyte\_punkty}{35}{subsubsection.4.8.5.4}%
+\contentsline {section}{\numberline {4.9}Dokumentacja klasy Strzelec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}pionowy}{36}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Opis szczegółowy}{36}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Dokumentacja konstruktora i destruktora}{36}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}Strzelec\_pionowy()}{36}{subsubsection.4.9.2.1}%
+\contentsline {subsection}{\numberline {4.9.3}Dokumentacja funkcji składowych}{37}{subsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.1}smierc()}{37}{subsubsection.4.9.3.1}%
+\contentsline {subsubsection}{\numberline {4.9.3.2}wykonaj\_ruch()}{37}{subsubsection.4.9.3.2}%
+\contentsline {section}{\numberline {4.10}Dokumentacja klasy Strzelec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}poziomy}{37}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Opis szczegółowy}{38}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Dokumentacja konstruktora i destruktora}{38}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}Strzelec\_poziomy()}{38}{subsubsection.4.10.2.1}%
+\contentsline {subsection}{\numberline {4.10.3}Dokumentacja funkcji składowych}{38}{subsection.4.10.3}%
+\contentsline {subsubsection}{\numberline {4.10.3.1}smierc()}{38}{subsubsection.4.10.3.1}%
+\contentsline {subsubsection}{\numberline {4.10.3.2}wykonaj\_ruch()}{39}{subsubsection.4.10.3.2}%
+\contentsline {section}{\numberline {4.11}Dokumentacja klasy Zapis}{39}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Opis szczegółowy}{40}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Dokumentacja konstruktora i destruktora}{40}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}Zapis()}{40}{subsubsection.4.11.2.1}%
+\contentsline {subsection}{\numberline {4.11.3}Dokumentacja funkcji składowych}{40}{subsection.4.11.3}%
+\contentsline {subsubsection}{\numberline {4.11.3.1}weryfikacja\_nazwy()}{40}{subsubsection.4.11.3.1}%
+\contentsline {subsubsection}{\numberline {4.11.3.2}wyswietl()}{40}{subsubsection.4.11.3.2}%
+\contentsline {subsection}{\numberline {4.11.4}Dokumentacja atrybutów składowych}{41}{subsection.4.11.4}%
+\contentsline {subsubsection}{\numberline {4.11.4.1}koniec\_zapisu}{41}{subsubsection.4.11.4.1}%
+\contentsline {chapter}{\numberline {5}Dokumentacja plików}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dokumentacja pliku Bomba.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Dokumentacja pliku Bomba.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{43}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Dokumentacja pliku Constants\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}And\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Includes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{43}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Dokumentacja definicji}{44}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}bezpieczne\_pola}{44}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}bomba}{44}{subsubsection.5.3.1.2}%
+\contentsline {subsubsection}{\numberline {5.3.1.3}dlugosc\_planszy}{45}{subsubsection.5.3.1.3}%
+\contentsline {subsubsection}{\numberline {5.3.1.4}dol\_gracza\_l}{45}{subsubsection.5.3.1.4}%
+\contentsline {subsubsection}{\numberline {5.3.1.5}dol\_gracza\_p}{45}{subsubsection.5.3.1.5}%
+\contentsline {subsubsection}{\numberline {5.3.1.6}gora\_gracza\_l}{45}{subsubsection.5.3.1.6}%
+\contentsline {subsubsection}{\numberline {5.3.1.7}gora\_gracza\_p}{45}{subsubsection.5.3.1.7}%
+\contentsline {subsubsection}{\numberline {5.3.1.8}gracz\_k}{45}{subsubsection.5.3.1.8}%
+\contentsline {subsubsection}{\numberline {5.3.1.9}gracz\_p}{45}{subsubsection.5.3.1.9}%
+\contentsline {subsubsection}{\numberline {5.3.1.10}ilosc\_wyswietlonych\_pol}{45}{subsubsection.5.3.1.10}%
+\contentsline {subsubsection}{\numberline {5.3.1.11}latwy\_punkty}{46}{subsubsection.5.3.1.11}%
+\contentsline {subsubsection}{\numberline {5.3.1.12}maksymalne\_cofniecie\_gracza}{46}{subsubsection.5.3.1.12}%
+\contentsline {subsubsection}{\numberline {5.3.1.13}maksymalny\_odstep\_const}{46}{subsubsection.5.3.1.13}%
+\contentsline {subsubsection}{\numberline {5.3.1.14}minimalna\_dlugosc\_wyspy}{46}{subsubsection.5.3.1.14}%
+\contentsline {subsubsection}{\numberline {5.3.1.15}minimalny\_czas\_pomiędzy\_ruchem\_postaci}{46}{subsubsection.5.3.1.15}%
+\contentsline {subsubsection}{\numberline {5.3.1.16}minimalny\_czas\_przesuniecia\_strzalu}{46}{subsubsection.5.3.1.16}%
+\contentsline {subsubsection}{\numberline {5.3.1.17}odstep\_boczny}{46}{subsubsection.5.3.1.17}%
+\contentsline {subsubsection}{\numberline {5.3.1.18}odstep\_gorny}{47}{subsubsection.5.3.1.18}%
+\contentsline {subsubsection}{\numberline {5.3.1.19}podloga}{47}{subsubsection.5.3.1.19}%
+\contentsline {subsubsection}{\numberline {5.3.1.20}punkt}{47}{subsubsection.5.3.1.20}%
+\contentsline {subsubsection}{\numberline {5.3.1.21}pusta\_przestrzen}{47}{subsubsection.5.3.1.21}%
+\contentsline {subsubsection}{\numberline {5.3.1.22}roznica\_wysokosci\_pomiedzy\_wyspami}{47}{subsubsection.5.3.1.22}%
+\contentsline {subsubsection}{\numberline {5.3.1.23}skok\_const}{47}{subsubsection.5.3.1.23}%
+\contentsline {subsubsection}{\numberline {5.3.1.24}sredni\_punkty}{47}{subsubsection.5.3.1.24}%
+\contentsline {subsubsection}{\numberline {5.3.1.25}strzal\_pionowy}{47}{subsubsection.5.3.1.25}%
+\contentsline {subsubsection}{\numberline {5.3.1.26}strzal\_poziomy}{48}{subsubsection.5.3.1.26}%
+\contentsline {subsubsection}{\numberline {5.3.1.27}strzelec\_pionowy\_d}{48}{subsubsection.5.3.1.27}%
+\contentsline {subsubsection}{\numberline {5.3.1.28}strzelec\_pionowy\_g}{48}{subsubsection.5.3.1.28}%
+\contentsline {subsubsection}{\numberline {5.3.1.29}strzelec\_poziomy\_d}{48}{subsubsection.5.3.1.29}%
+\contentsline {subsubsection}{\numberline {5.3.1.30}strzelec\_poziomy\_g}{48}{subsubsection.5.3.1.30}%
+\contentsline {subsubsection}{\numberline {5.3.1.31}wysokosc\_planszy}{48}{subsubsection.5.3.1.31}%
+\contentsline {subsubsection}{\numberline {5.3.1.32}zasieg\_strzalu\_pionowego}{48}{subsubsection.5.3.1.32}%
+\contentsline {subsubsection}{\numberline {5.3.1.33}zasieg\_strzalu\_poziomego}{48}{subsubsection.5.3.1.33}%
+\contentsline {section}{\numberline {5.4}Dokumentacja pliku Gra.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{49}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Dokumentacja pliku Gra.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{49}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Dokumentacja pliku Mario.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{49}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Dokumentacja pliku Mario.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{49}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Dokumentacja pliku Mario\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}F\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}L.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{49}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Dokumentacja funkcji}{50}{subsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.1}main()}{50}{subsubsection.5.8.1.1}%
+\contentsline {section}{\numberline {5.9}Dokumentacja pliku Menu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{50}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Dokumentacja pliku Menu.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{50}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Dokumentacja pliku Plansza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{50}{section.5.11}%
+\contentsline {section}{\numberline {5.12}Dokumentacja pliku Plansza.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{50}{section.5.12}%
+\contentsline {section}{\numberline {5.13}Dokumentacja pliku Przeciwnicy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{51}{section.5.13}%
+\contentsline {section}{\numberline {5.14}Dokumentacja pliku Przeciwnicy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{51}{section.5.14}%
+\contentsline {section}{\numberline {5.15}Dokumentacja pliku Rekord.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{51}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Dokumentacja funkcji}{51}{subsection.5.15.1}%
+\contentsline {subsubsection}{\numberline {5.15.1.1}operator$<$()}{51}{subsubsection.5.15.1.1}%
+\contentsline {subsubsection}{\numberline {5.15.1.2}operator$<$$<$()}{52}{subsubsection.5.15.1.2}%
+\contentsline {subsubsection}{\numberline {5.15.1.3}operator$>$()}{52}{subsubsection.5.15.1.3}%
+\contentsline {subsubsection}{\numberline {5.15.1.4}operator$>$$>$()}{52}{subsubsection.5.15.1.4}%
+\contentsline {section}{\numberline {5.16}Dokumentacja pliku Rekord.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{52}{section.5.16}%
+\contentsline {section}{\numberline {5.17}Dokumentacja pliku Ruchy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{52}{section.5.17}%
+\contentsline {section}{\numberline {5.18}Dokumentacja pliku Ruchy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{52}{section.5.18}%
+\contentsline {section}{\numberline {5.19}Dokumentacja pliku Struktury\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Funkcje.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{53}{section.5.19}%
+\contentsline {subsection}{\numberline {5.19.1}Dokumentacja funkcji}{53}{subsection.5.19.1}%
+\contentsline {subsubsection}{\numberline {5.19.1.1}przesuniecie()}{53}{subsubsection.5.19.1.1}%
+\contentsline {section}{\numberline {5.20}Dokumentacja pliku Struktury\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Funkcje.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{53}{section.5.20}%
+\contentsline {subsection}{\numberline {5.20.1}Dokumentacja funkcji}{53}{subsection.5.20.1}%
+\contentsline {subsubsection}{\numberline {5.20.1.1}przesuniecie()}{53}{subsubsection.5.20.1.1}%
+\contentsline {section}{\numberline {5.21}Dokumentacja pliku Strzelec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}pionowy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{53}{section.5.21}%
+\contentsline {section}{\numberline {5.22}Dokumentacja pliku Strzelec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}pionowy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{54}{section.5.22}%
+\contentsline {section}{\numberline {5.23}Dokumentacja pliku Strzelec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}poziomy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{54}{section.5.23}%
+\contentsline {section}{\numberline {5.24}Dokumentacja pliku Strzelec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}poziomy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{54}{section.5.24}%
+\contentsline {section}{\numberline {5.25}Dokumentacja pliku Zapis.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{54}{section.5.25}%
+\contentsline {section}{\numberline {5.26}Dokumentacja pliku Zapis.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{54}{section.5.26}%

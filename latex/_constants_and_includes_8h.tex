@@ -1,0 +1,292 @@
+\hypertarget{_constants_and_includes_8h}{}\doxysection{Dokumentacja pliku Constants\+And\+Includes.\+h}
+\label{_constants_and_includes_8h}\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$barrier$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$regex$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include $<$ranges$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_af846190964e143c0c3050e898201108f}{dlugosc\+\_\+planszy}}~210
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_ac002d4d920da2b6d643dd680de13c3a6}{wysokosc\+\_\+planszy}}~16
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a96d178870536e685e623c13f044c5d9b}{bezpieczne\+\_\+pola}}~10
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a6c2667abfe4a545afd7e5cd264a6fa01}{maksymalny\+\_\+odstep\+\_\+const}}~4
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_ae3759ee15baf052aec1bb1d92e4248c2}{minimalna\+\_\+dlugosc\+\_\+wyspy}}~5
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a42101ccbdecba77b849b64ef979bf782}{roznica\+\_\+wysokosci\+\_\+pomiedzy\+\_\+wyspami}}~3
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_aa8033a2c122af01279c1e0fbb8323975}{skok\+\_\+const}}~4
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_af1434d1fcc5d5bcc754b85a073431166}{ilosc\+\_\+wyswietlonych\+\_\+pol}}~35
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_af652084a7dd0d0f0b3be0a1a9f594102}{odstep\+\_\+gorny}}~30.\+0f
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a5394010281f605364a1ba894f7cff9d9}{odstep\+\_\+boczny}}~30.\+0f
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_ad9e8292f60f2dae6c160e5362f5451ed}{minimalny\+\_\+czas\+\_\+przesuniecia\+\_\+strzalu}}~0.\+3
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a9c9ecf44e28ba632d0d06b166078d112}{minimalny\+\_\+czas\+\_\+pomiędzy\+\_\+ruchem\+\_\+postaci}}~30
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a57d950c6fe25f3f323461ed56d290f18}{zasieg\+\_\+strzalu\+\_\+pionowego}}~5
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a10c2b6792c0f2adf9a573692acbdac1f}{zasieg\+\_\+strzalu\+\_\+poziomego}}~6
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a69265d6715876b259228df060ae9c552}{maksymalne\+\_\+cofniecie\+\_\+gracza}}~5
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_ada893a170cd8e0c4c1a229ca14ffe8f3}{podloga}}~1
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_aae2da36252a92cd4a0b4f484f3e68c07}{gracz\+\_\+p}}~10
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_ade7941ea1593522d8c35c223e5501b1b}{gracz\+\_\+k}}~13
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_ab06b8b6a29b283ad36d411dec5575a7b}{pusta\+\_\+przestrzen}}~0
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a539139cb3280b16f54282622bafc6965}{gora\+\_\+gracza\+\_\+p}}~10
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_ae6314caddf2561b91d58f4481328b376}{dol\+\_\+gracza\+\_\+p}}~11
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a5408d0572c93e0fdd511713eeebb8f53}{gora\+\_\+gracza\+\_\+l}}~12
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a738bb796b6f3bebcf0aa593db870ee63}{dol\+\_\+gracza\+\_\+l}}~13
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a1d876e29ef609f2feff4c4295f9d8bb4}{punkt}}~2
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a67f46420318f4bbc0be684526e1e6ff5}{strzelec\+\_\+poziomy\+\_\+g}}~20
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a5f6458f93af868fb3c5dde02616ae4d6}{strzelec\+\_\+poziomy\+\_\+d}}~21
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a1e80be1abaa8052c12691aff51429bc2}{strzal\+\_\+poziomy}}~22
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_af02f7192cb060f457334896273ee9745}{strzelec\+\_\+pionowy\+\_\+g}}~23
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a6f3da9a1ec62cafc8eedd5325fa849e5}{strzelec\+\_\+pionowy\+\_\+d}}~24
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a23d4f53dbfad7da3ac14e947bee63e67}{strzal\+\_\+pionowy}}~25
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_ab3dabc1c7a080344c90f3d617af690d3}{bomba}}~26
+\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_a29c212b31f406b2a8393c2b6d8842d5b}{latwy\+\_\+punkty}}~5
+\begin{DoxyCompactList}\small\item\em ile punktów to poszczególny tryb trudności \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_constants_and_includes_8h_ae76289e9020da354e139aff5ed4b851d}{sredni\+\_\+punkty}}~12
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja definicji}
+\mbox{\Hypertarget{_constants_and_includes_8h_a96d178870536e685e623c13f044c5d9b}\label{_constants_and_includes_8h_a96d178870536e685e623c13f044c5d9b}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!bezpieczne\_pola@{bezpieczne\_pola}}
+\index{bezpieczne\_pola@{bezpieczne\_pola}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{bezpieczne\_pola}{bezpieczne\_pola}}
+{\footnotesize\ttfamily \#define bezpieczne\+\_\+pola~10}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_ab3dabc1c7a080344c90f3d617af690d3}\label{_constants_and_includes_8h_ab3dabc1c7a080344c90f3d617af690d3}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!bomba@{bomba}}
+\index{bomba@{bomba}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{bomba}{bomba}}
+{\footnotesize\ttfamily \#define bomba~26}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_af846190964e143c0c3050e898201108f}\label{_constants_and_includes_8h_af846190964e143c0c3050e898201108f}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!dlugosc\_planszy@{dlugosc\_planszy}}
+\index{dlugosc\_planszy@{dlugosc\_planszy}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{dlugosc\_planszy}{dlugosc\_planszy}}
+{\footnotesize\ttfamily \#define dlugosc\+\_\+planszy~210}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a738bb796b6f3bebcf0aa593db870ee63}\label{_constants_and_includes_8h_a738bb796b6f3bebcf0aa593db870ee63}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!dol\_gracza\_l@{dol\_gracza\_l}}
+\index{dol\_gracza\_l@{dol\_gracza\_l}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{dol\_gracza\_l}{dol\_gracza\_l}}
+{\footnotesize\ttfamily \#define dol\+\_\+gracza\+\_\+l~13}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_ae6314caddf2561b91d58f4481328b376}\label{_constants_and_includes_8h_ae6314caddf2561b91d58f4481328b376}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!dol\_gracza\_p@{dol\_gracza\_p}}
+\index{dol\_gracza\_p@{dol\_gracza\_p}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{dol\_gracza\_p}{dol\_gracza\_p}}
+{\footnotesize\ttfamily \#define dol\+\_\+gracza\+\_\+p~11}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a5408d0572c93e0fdd511713eeebb8f53}\label{_constants_and_includes_8h_a5408d0572c93e0fdd511713eeebb8f53}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!gora\_gracza\_l@{gora\_gracza\_l}}
+\index{gora\_gracza\_l@{gora\_gracza\_l}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{gora\_gracza\_l}{gora\_gracza\_l}}
+{\footnotesize\ttfamily \#define gora\+\_\+gracza\+\_\+l~12}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a539139cb3280b16f54282622bafc6965}\label{_constants_and_includes_8h_a539139cb3280b16f54282622bafc6965}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!gora\_gracza\_p@{gora\_gracza\_p}}
+\index{gora\_gracza\_p@{gora\_gracza\_p}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{gora\_gracza\_p}{gora\_gracza\_p}}
+{\footnotesize\ttfamily \#define gora\+\_\+gracza\+\_\+p~10}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_ade7941ea1593522d8c35c223e5501b1b}\label{_constants_and_includes_8h_ade7941ea1593522d8c35c223e5501b1b}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!gracz\_k@{gracz\_k}}
+\index{gracz\_k@{gracz\_k}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{gracz\_k}{gracz\_k}}
+{\footnotesize\ttfamily \#define gracz\+\_\+k~13}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_aae2da36252a92cd4a0b4f484f3e68c07}\label{_constants_and_includes_8h_aae2da36252a92cd4a0b4f484f3e68c07}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!gracz\_p@{gracz\_p}}
+\index{gracz\_p@{gracz\_p}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{gracz\_p}{gracz\_p}}
+{\footnotesize\ttfamily \#define gracz\+\_\+p~10}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_af1434d1fcc5d5bcc754b85a073431166}\label{_constants_and_includes_8h_af1434d1fcc5d5bcc754b85a073431166}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!ilosc\_wyswietlonych\_pol@{ilosc\_wyswietlonych\_pol}}
+\index{ilosc\_wyswietlonych\_pol@{ilosc\_wyswietlonych\_pol}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{ilosc\_wyswietlonych\_pol}{ilosc\_wyswietlonych\_pol}}
+{\footnotesize\ttfamily \#define ilosc\+\_\+wyswietlonych\+\_\+pol~35}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a29c212b31f406b2a8393c2b6d8842d5b}\label{_constants_and_includes_8h_a29c212b31f406b2a8393c2b6d8842d5b}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!latwy\_punkty@{latwy\_punkty}}
+\index{latwy\_punkty@{latwy\_punkty}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{latwy\_punkty}{latwy\_punkty}}
+{\footnotesize\ttfamily \#define latwy\+\_\+punkty~5}
+
+
+
+ile punktów to poszczególny tryb trudności 
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a69265d6715876b259228df060ae9c552}\label{_constants_and_includes_8h_a69265d6715876b259228df060ae9c552}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!maksymalne\_cofniecie\_gracza@{maksymalne\_cofniecie\_gracza}}
+\index{maksymalne\_cofniecie\_gracza@{maksymalne\_cofniecie\_gracza}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{maksymalne\_cofniecie\_gracza}{maksymalne\_cofniecie\_gracza}}
+{\footnotesize\ttfamily \#define maksymalne\+\_\+cofniecie\+\_\+gracza~5}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a6c2667abfe4a545afd7e5cd264a6fa01}\label{_constants_and_includes_8h_a6c2667abfe4a545afd7e5cd264a6fa01}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!maksymalny\_odstep\_const@{maksymalny\_odstep\_const}}
+\index{maksymalny\_odstep\_const@{maksymalny\_odstep\_const}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{maksymalny\_odstep\_const}{maksymalny\_odstep\_const}}
+{\footnotesize\ttfamily \#define maksymalny\+\_\+odstep\+\_\+const~4}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_ae3759ee15baf052aec1bb1d92e4248c2}\label{_constants_and_includes_8h_ae3759ee15baf052aec1bb1d92e4248c2}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!minimalna\_dlugosc\_wyspy@{minimalna\_dlugosc\_wyspy}}
+\index{minimalna\_dlugosc\_wyspy@{minimalna\_dlugosc\_wyspy}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{minimalna\_dlugosc\_wyspy}{minimalna\_dlugosc\_wyspy}}
+{\footnotesize\ttfamily \#define minimalna\+\_\+dlugosc\+\_\+wyspy~5}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a9c9ecf44e28ba632d0d06b166078d112}\label{_constants_and_includes_8h_a9c9ecf44e28ba632d0d06b166078d112}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!minimalny\_czas\_pomiędzy\_ruchem\_postaci@{minimalny\_czas\_pomiędzy\_ruchem\_postaci}}
+\index{minimalny\_czas\_pomiędzy\_ruchem\_postaci@{minimalny\_czas\_pomiędzy\_ruchem\_postaci}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{minimalny\_czas\_pomiędzy\_ruchem\_postaci}{minimalny\_czas\_pomiędzy\_ruchem\_postaci}}
+{\footnotesize\ttfamily \#define minimalny\+\_\+czas\+\_\+pomiędzy\+\_\+ruchem\+\_\+postaci~30}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_ad9e8292f60f2dae6c160e5362f5451ed}\label{_constants_and_includes_8h_ad9e8292f60f2dae6c160e5362f5451ed}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!minimalny\_czas\_przesuniecia\_strzalu@{minimalny\_czas\_przesuniecia\_strzalu}}
+\index{minimalny\_czas\_przesuniecia\_strzalu@{minimalny\_czas\_przesuniecia\_strzalu}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{minimalny\_czas\_przesuniecia\_strzalu}{minimalny\_czas\_przesuniecia\_strzalu}}
+{\footnotesize\ttfamily \#define minimalny\+\_\+czas\+\_\+przesuniecia\+\_\+strzalu~0.\+3}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a5394010281f605364a1ba894f7cff9d9}\label{_constants_and_includes_8h_a5394010281f605364a1ba894f7cff9d9}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!odstep\_boczny@{odstep\_boczny}}
+\index{odstep\_boczny@{odstep\_boczny}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{odstep\_boczny}{odstep\_boczny}}
+{\footnotesize\ttfamily \#define odstep\+\_\+boczny~30.\+0f}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_af652084a7dd0d0f0b3be0a1a9f594102}\label{_constants_and_includes_8h_af652084a7dd0d0f0b3be0a1a9f594102}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!odstep\_gorny@{odstep\_gorny}}
+\index{odstep\_gorny@{odstep\_gorny}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{odstep\_gorny}{odstep\_gorny}}
+{\footnotesize\ttfamily \#define odstep\+\_\+gorny~30.\+0f}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_ada893a170cd8e0c4c1a229ca14ffe8f3}\label{_constants_and_includes_8h_ada893a170cd8e0c4c1a229ca14ffe8f3}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!podloga@{podloga}}
+\index{podloga@{podloga}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{podloga}{podloga}}
+{\footnotesize\ttfamily \#define podloga~1}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a1d876e29ef609f2feff4c4295f9d8bb4}\label{_constants_and_includes_8h_a1d876e29ef609f2feff4c4295f9d8bb4}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!punkt@{punkt}}
+\index{punkt@{punkt}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{punkt}{punkt}}
+{\footnotesize\ttfamily \#define punkt~2}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_ab06b8b6a29b283ad36d411dec5575a7b}\label{_constants_and_includes_8h_ab06b8b6a29b283ad36d411dec5575a7b}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!pusta\_przestrzen@{pusta\_przestrzen}}
+\index{pusta\_przestrzen@{pusta\_przestrzen}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{pusta\_przestrzen}{pusta\_przestrzen}}
+{\footnotesize\ttfamily \#define pusta\+\_\+przestrzen~0}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a42101ccbdecba77b849b64ef979bf782}\label{_constants_and_includes_8h_a42101ccbdecba77b849b64ef979bf782}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!roznica\_wysokosci\_pomiedzy\_wyspami@{roznica\_wysokosci\_pomiedzy\_wyspami}}
+\index{roznica\_wysokosci\_pomiedzy\_wyspami@{roznica\_wysokosci\_pomiedzy\_wyspami}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{roznica\_wysokosci\_pomiedzy\_wyspami}{roznica\_wysokosci\_pomiedzy\_wyspami}}
+{\footnotesize\ttfamily \#define roznica\+\_\+wysokosci\+\_\+pomiedzy\+\_\+wyspami~3}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_aa8033a2c122af01279c1e0fbb8323975}\label{_constants_and_includes_8h_aa8033a2c122af01279c1e0fbb8323975}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!skok\_const@{skok\_const}}
+\index{skok\_const@{skok\_const}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{skok\_const}{skok\_const}}
+{\footnotesize\ttfamily \#define skok\+\_\+const~4}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_ae76289e9020da354e139aff5ed4b851d}\label{_constants_and_includes_8h_ae76289e9020da354e139aff5ed4b851d}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!sredni\_punkty@{sredni\_punkty}}
+\index{sredni\_punkty@{sredni\_punkty}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{sredni\_punkty}{sredni\_punkty}}
+{\footnotesize\ttfamily \#define sredni\+\_\+punkty~12}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a23d4f53dbfad7da3ac14e947bee63e67}\label{_constants_and_includes_8h_a23d4f53dbfad7da3ac14e947bee63e67}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!strzal\_pionowy@{strzal\_pionowy}}
+\index{strzal\_pionowy@{strzal\_pionowy}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{strzal\_pionowy}{strzal\_pionowy}}
+{\footnotesize\ttfamily \#define strzal\+\_\+pionowy~25}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a1e80be1abaa8052c12691aff51429bc2}\label{_constants_and_includes_8h_a1e80be1abaa8052c12691aff51429bc2}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!strzal\_poziomy@{strzal\_poziomy}}
+\index{strzal\_poziomy@{strzal\_poziomy}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{strzal\_poziomy}{strzal\_poziomy}}
+{\footnotesize\ttfamily \#define strzal\+\_\+poziomy~22}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a6f3da9a1ec62cafc8eedd5325fa849e5}\label{_constants_and_includes_8h_a6f3da9a1ec62cafc8eedd5325fa849e5}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!strzelec\_pionowy\_d@{strzelec\_pionowy\_d}}
+\index{strzelec\_pionowy\_d@{strzelec\_pionowy\_d}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{strzelec\_pionowy\_d}{strzelec\_pionowy\_d}}
+{\footnotesize\ttfamily \#define strzelec\+\_\+pionowy\+\_\+d~24}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_af02f7192cb060f457334896273ee9745}\label{_constants_and_includes_8h_af02f7192cb060f457334896273ee9745}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!strzelec\_pionowy\_g@{strzelec\_pionowy\_g}}
+\index{strzelec\_pionowy\_g@{strzelec\_pionowy\_g}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{strzelec\_pionowy\_g}{strzelec\_pionowy\_g}}
+{\footnotesize\ttfamily \#define strzelec\+\_\+pionowy\+\_\+g~23}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a5f6458f93af868fb3c5dde02616ae4d6}\label{_constants_and_includes_8h_a5f6458f93af868fb3c5dde02616ae4d6}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!strzelec\_poziomy\_d@{strzelec\_poziomy\_d}}
+\index{strzelec\_poziomy\_d@{strzelec\_poziomy\_d}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{strzelec\_poziomy\_d}{strzelec\_poziomy\_d}}
+{\footnotesize\ttfamily \#define strzelec\+\_\+poziomy\+\_\+d~21}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a67f46420318f4bbc0be684526e1e6ff5}\label{_constants_and_includes_8h_a67f46420318f4bbc0be684526e1e6ff5}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!strzelec\_poziomy\_g@{strzelec\_poziomy\_g}}
+\index{strzelec\_poziomy\_g@{strzelec\_poziomy\_g}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{strzelec\_poziomy\_g}{strzelec\_poziomy\_g}}
+{\footnotesize\ttfamily \#define strzelec\+\_\+poziomy\+\_\+g~20}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_ac002d4d920da2b6d643dd680de13c3a6}\label{_constants_and_includes_8h_ac002d4d920da2b6d643dd680de13c3a6}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!wysokosc\_planszy@{wysokosc\_planszy}}
+\index{wysokosc\_planszy@{wysokosc\_planszy}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{wysokosc\_planszy}{wysokosc\_planszy}}
+{\footnotesize\ttfamily \#define wysokosc\+\_\+planszy~16}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a57d950c6fe25f3f323461ed56d290f18}\label{_constants_and_includes_8h_a57d950c6fe25f3f323461ed56d290f18}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!zasieg\_strzalu\_pionowego@{zasieg\_strzalu\_pionowego}}
+\index{zasieg\_strzalu\_pionowego@{zasieg\_strzalu\_pionowego}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{zasieg\_strzalu\_pionowego}{zasieg\_strzalu\_pionowego}}
+{\footnotesize\ttfamily \#define zasieg\+\_\+strzalu\+\_\+pionowego~5}
+
+\mbox{\Hypertarget{_constants_and_includes_8h_a10c2b6792c0f2adf9a573692acbdac1f}\label{_constants_and_includes_8h_a10c2b6792c0f2adf9a573692acbdac1f}} 
+\index{ConstantsAndIncludes.h@{ConstantsAndIncludes.h}!zasieg\_strzalu\_poziomego@{zasieg\_strzalu\_poziomego}}
+\index{zasieg\_strzalu\_poziomego@{zasieg\_strzalu\_poziomego}!ConstantsAndIncludes.h@{ConstantsAndIncludes.h}}
+\doxysubsubsection{\texorpdfstring{zasieg\_strzalu\_poziomego}{zasieg\_strzalu\_poziomego}}
+{\footnotesize\ttfamily \#define zasieg\+\_\+strzalu\+\_\+poziomego~6}
+

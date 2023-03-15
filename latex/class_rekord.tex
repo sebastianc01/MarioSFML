@@ -1,0 +1,211 @@
+\hypertarget{class_rekord}{}\doxysection{Dokumentacja klasy Rekord}
+\label{class_rekord}\index{Rekord@{Rekord}}
+
+
+{\ttfamily \#include $<$Rekord.\+h$>$}
+
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rekord_a6012b01fe420fc5e0e193f9816a89218}{Rekord}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rekord_a5ae7e9762db56071018488b64fe874b7}{Rekord}} (std\+::string \mbox{\hyperlink{class_rekord_ac08a5d444a025e171ef273f78736af6e}{nazwa}}, long long \mbox{\hyperlink{class_rekord_aa35103a676a152c3765fc9952c9c3150}{czas}}, int \mbox{\hyperlink{class_rekord_aafa3b57ef3985bbfd2a4cea3eb8ceace}{zdobyte\+\_\+punkty}}, int \mbox{\hyperlink{class_rekord_ab4e5bf7bd146504f467a94c4a7a6685c}{punkty\+\_\+do\+\_\+zdobycia}})
+\begin{DoxyCompactList}\small\item\em Konstruktor z deklaracją wszystkich elementów \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_rekord_afc6d831954abccf6ff86feb682491911}{zwroc\+\_\+nazwe}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca nazwę \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{class_rekord_a579a6a99ff2f7c7d87c63a19d7b44a67}{zwroc\+\_\+czas}} ()
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca czas gry w sekundach \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_rekord_a098b2df42fead65acd26c0070e5f5158}{zwroc\+\_\+zdobyte\+\_\+punkty}} ()
+\begin{DoxyCompactList}\small\item\em metoda zwracająca ilość zdobytych przez gracza punktów \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_rekord_acac6590000c36c18e38412d4b7bc2358}{zwroc\+\_\+punkty\+\_\+do\+\_\+zdobycia}} ()
+\begin{DoxyCompactList}\small\item\em metoda zwracająca cel punktów ustawiony przez gracza na samym początku \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_rekord_ac08a5d444a025e171ef273f78736af6e}{nazwa}}
+\begin{DoxyCompactList}\small\item\em nazwa użytkownika, jej podanie jest opcjonalne \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{class_rekord_aa35103a676a152c3765fc9952c9c3150}{czas}}
+\begin{DoxyCompactList}\small\item\em całkowity czas gry w sekundach \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_rekord_aafa3b57ef3985bbfd2a4cea3eb8ceace}{zdobyte\+\_\+punkty}}
+\begin{DoxyCompactList}\small\item\em ilość zdobytych przez gracza punktów \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_rekord_ab4e5bf7bd146504f467a94c4a7a6685c}{punkty\+\_\+do\+\_\+zdobycia}}
+\begin{DoxyCompactList}\small\item\em cel punktów ustawiony przez gracza na samym początku \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_rekord_a4239510d1e5d50f1027fe09075ea8837}{operator$<$}} (const \mbox{\hyperlink{class_rekord}{Rekord}} \&l, const \mbox{\hyperlink{class_rekord}{Rekord}} \&p)
+\item 
+bool \mbox{\hyperlink{class_rekord_a7441d91f982783efdc1b2656d55424e8}{operator$>$}} (const \mbox{\hyperlink{class_rekord}{Rekord}} \&l, const \mbox{\hyperlink{class_rekord}{Rekord}} \&p)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_rekord_ac75d6af77863bbdf2ddfb85f60e63d36}{operator$<$$<$}} (std\+::ostream \&str, const \mbox{\hyperlink{class_rekord}{Rekord}} \&rekord)
+\item 
+std\+::istream \& \mbox{\hyperlink{class_rekord_aec9523e6544ea6c6765ba0f12ca5be39}{operator$>$$>$}} (std\+::istream \&str, \mbox{\hyperlink{class_rekord}{Rekord}} \&rekord)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa umożliwiająca zapisanie pojedynczego rekordu. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_rekord_a6012b01fe420fc5e0e193f9816a89218}\label{class_rekord_a6012b01fe420fc5e0e193f9816a89218}} 
+\index{Rekord@{Rekord}!Rekord@{Rekord}}
+\index{Rekord@{Rekord}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{Rekord()}{Rekord()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rekord\+::\+Rekord (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktor 
+
+\mbox{\Hypertarget{class_rekord_a5ae7e9762db56071018488b64fe874b7}\label{class_rekord_a5ae7e9762db56071018488b64fe874b7}} 
+\index{Rekord@{Rekord}!Rekord@{Rekord}}
+\index{Rekord@{Rekord}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{Rekord()}{Rekord()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rekord\+::\+Rekord (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa,  }\item[{long long}]{czas,  }\item[{int}]{zdobyte\+\_\+punkty,  }\item[{int}]{punkty\+\_\+do\+\_\+zdobycia }\end{DoxyParamCaption})}
+
+
+
+Konstruktor z deklaracją wszystkich elementów 
+
+
+\begin{DoxyParams}{Parametry}
+{\em nazwa} & nazwa użytkownika, jej podanie jest opcjonalne\\
+\hline
+{\em czas} & całkowity czas gry w sekundach\\
+\hline
+{\em zdobyte\+\_\+punkty} & ilość zdobytych przez gracza punktów\\
+\hline
+{\em punkty\+\_\+do\+\_\+zdobycia} & cel punktów ustawiony przez gracza na samym początku\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_rekord_a579a6a99ff2f7c7d87c63a19d7b44a67}\label{class_rekord_a579a6a99ff2f7c7d87c63a19d7b44a67}} 
+\index{Rekord@{Rekord}!zwroc\_czas@{zwroc\_czas}}
+\index{zwroc\_czas@{zwroc\_czas}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{zwroc\_czas()}{zwroc\_czas()}}
+{\footnotesize\ttfamily long long Rekord\+::zwroc\+\_\+czas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracająca czas gry w sekundach 
+
+\begin{DoxyReturn}{Zwraca}
+czas
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rekord_afc6d831954abccf6ff86feb682491911}\label{class_rekord_afc6d831954abccf6ff86feb682491911}} 
+\index{Rekord@{Rekord}!zwroc\_nazwe@{zwroc\_nazwe}}
+\index{zwroc\_nazwe@{zwroc\_nazwe}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{zwroc\_nazwe()}{zwroc\_nazwe()}}
+{\footnotesize\ttfamily std\+::string Rekord\+::zwroc\+\_\+nazwe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda zwracająca nazwę 
+
+\begin{DoxyReturn}{Zwraca}
+nazwa
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rekord_acac6590000c36c18e38412d4b7bc2358}\label{class_rekord_acac6590000c36c18e38412d4b7bc2358}} 
+\index{Rekord@{Rekord}!zwroc\_punkty\_do\_zdobycia@{zwroc\_punkty\_do\_zdobycia}}
+\index{zwroc\_punkty\_do\_zdobycia@{zwroc\_punkty\_do\_zdobycia}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{zwroc\_punkty\_do\_zdobycia()}{zwroc\_punkty\_do\_zdobycia()}}
+{\footnotesize\ttfamily int Rekord\+::zwroc\+\_\+punkty\+\_\+do\+\_\+zdobycia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda zwracająca cel punktów ustawiony przez gracza na samym początku 
+
+\begin{DoxyReturn}{Zwraca}
+punkty\+\_\+do\+\_\+zdobycia
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rekord_a098b2df42fead65acd26c0070e5f5158}\label{class_rekord_a098b2df42fead65acd26c0070e5f5158}} 
+\index{Rekord@{Rekord}!zwroc\_zdobyte\_punkty@{zwroc\_zdobyte\_punkty}}
+\index{zwroc\_zdobyte\_punkty@{zwroc\_zdobyte\_punkty}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{zwroc\_zdobyte\_punkty()}{zwroc\_zdobyte\_punkty()}}
+{\footnotesize\ttfamily int Rekord\+::zwroc\+\_\+zdobyte\+\_\+punkty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda zwracająca ilość zdobytych przez gracza punktów 
+
+\begin{DoxyReturn}{Zwraca}
+zdobyte\+\_\+punkty
+\end{DoxyReturn}
+
+
+\doxysubsection{Dokumentacja przyjaciół i funkcji związanych}
+\mbox{\Hypertarget{class_rekord_a4239510d1e5d50f1027fe09075ea8837}\label{class_rekord_a4239510d1e5d50f1027fe09075ea8837}} 
+\index{Rekord@{Rekord}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rekord}{Rekord}} \&}]{l,  }\item[{const \mbox{\hyperlink{class_rekord}{Rekord}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_rekord_ac75d6af77863bbdf2ddfb85f60e63d36}\label{class_rekord_ac75d6af77863bbdf2ddfb85f60e63d36}} 
+\index{Rekord@{Rekord}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{str,  }\item[{const \mbox{\hyperlink{class_rekord}{Rekord}} \&}]{rekord }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_rekord_a7441d91f982783efdc1b2656d55424e8}\label{class_rekord_a7441d91f982783efdc1b2656d55424e8}} 
+\index{Rekord@{Rekord}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{operator$>$}{operator>}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_rekord}{Rekord}} \&}]{l,  }\item[{const \mbox{\hyperlink{class_rekord}{Rekord}} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_rekord_aec9523e6544ea6c6765ba0f12ca5be39}\label{class_rekord_aec9523e6544ea6c6765ba0f12ca5be39}} 
+\index{Rekord@{Rekord}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{str,  }\item[{\mbox{\hyperlink{class_rekord}{Rekord}} \&}]{rekord }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_rekord_aa35103a676a152c3765fc9952c9c3150}\label{class_rekord_aa35103a676a152c3765fc9952c9c3150}} 
+\index{Rekord@{Rekord}!czas@{czas}}
+\index{czas@{czas}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{czas}{czas}}
+{\footnotesize\ttfamily long long Rekord\+::czas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+całkowity czas gry w sekundach 
+
+\mbox{\Hypertarget{class_rekord_ac08a5d444a025e171ef273f78736af6e}\label{class_rekord_ac08a5d444a025e171ef273f78736af6e}} 
+\index{Rekord@{Rekord}!nazwa@{nazwa}}
+\index{nazwa@{nazwa}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{nazwa}{nazwa}}
+{\footnotesize\ttfamily std\+::string Rekord\+::nazwa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+nazwa użytkownika, jej podanie jest opcjonalne 
+
+\mbox{\Hypertarget{class_rekord_ab4e5bf7bd146504f467a94c4a7a6685c}\label{class_rekord_ab4e5bf7bd146504f467a94c4a7a6685c}} 
+\index{Rekord@{Rekord}!punkty\_do\_zdobycia@{punkty\_do\_zdobycia}}
+\index{punkty\_do\_zdobycia@{punkty\_do\_zdobycia}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{punkty\_do\_zdobycia}{punkty\_do\_zdobycia}}
+{\footnotesize\ttfamily int Rekord\+::punkty\+\_\+do\+\_\+zdobycia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cel punktów ustawiony przez gracza na samym początku 
+
+\mbox{\Hypertarget{class_rekord_aafa3b57ef3985bbfd2a4cea3eb8ceace}\label{class_rekord_aafa3b57ef3985bbfd2a4cea3eb8ceace}} 
+\index{Rekord@{Rekord}!zdobyte\_punkty@{zdobyte\_punkty}}
+\index{zdobyte\_punkty@{zdobyte\_punkty}!Rekord@{Rekord}}
+\doxysubsubsection{\texorpdfstring{zdobyte\_punkty}{zdobyte\_punkty}}
+{\footnotesize\ttfamily int Rekord\+::zdobyte\+\_\+punkty\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ilość zdobytych przez gracza punktów 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_rekord_8h}{Rekord.\+h}}\item 
+\mbox{\hyperlink{_rekord_8cpp}{Rekord.\+cpp}}\end{DoxyCompactItemize}

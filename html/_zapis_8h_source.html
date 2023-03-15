@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zmodyfikowana gra Mario: Plik źródłowy Zapis.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zmodyfikowana gra Mario
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Zapis.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_zapis_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_constants_and_includes_8h.html">ConstantsAndIncludes.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_rekord_8h.html">Rekord.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_menu_8h.html">Menu.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_plansza_8h.html">Plansza.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_zapis.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_zapis.html">Zapis</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_zapis.html#a051faa4c658fb1c50aad98e54fb01e40">   15</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_zapis.html#a051faa4c658fb1c50aad98e54fb01e40">koniec_zapisu</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_zapis.html#a59852e75402c011038fb13783d7153c4">Zapis</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_zapis.html#a4edaca8f6a71efbeb7e0b03d882e33d3">weryfikacja_nazwy</a>(std::string&amp; nazwa);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_zapis.html#a8dc2d59bac96d8bd5b1ae01e62e049c0">wyswietl</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> <span class="keywordtype">int</span> cel_punktow, <span class="keyword">const</span> <span class="keywordtype">int</span> uzyskane_punkty, std::chrono::time_point&lt;std::chrono::system_clock&gt; start, std::chrono::time_point&lt;std::chrono::system_clock&gt; koniec);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_plansza_8h_html"><div class="ttname"><a href="_plansza_8h.html">Plansza.h</a></div></div>
+<div class="ttc" id="aclass_zapis_html_a4edaca8f6a71efbeb7e0b03d882e33d3"><div class="ttname"><a href="class_zapis.html#a4edaca8f6a71efbeb7e0b03d882e33d3">Zapis::weryfikacja_nazwy</a></div><div class="ttdeci">bool weryfikacja_nazwy(std::string &amp;nazwa)</div><div class="ttdoc">Metoda sprawdzająca, czy wprowadzona nazwa gracza spełnia narzucone wymagania, czyli zawiera tylko li...</div><div class="ttdef"><b>Definition:</b> Zapis.cpp:5</div></div>
+<div class="ttc" id="a_rekord_8h_html"><div class="ttname"><a href="_rekord_8h.html">Rekord.h</a></div></div>
+<div class="ttc" id="aclass_zapis_html_a59852e75402c011038fb13783d7153c4"><div class="ttname"><a href="class_zapis.html#a59852e75402c011038fb13783d7153c4">Zapis::Zapis</a></div><div class="ttdeci">Zapis()</div><div class="ttdoc">Konstruktor</div><div class="ttdef"><b>Definition:</b> Zapis.cpp:3</div></div>
+<div class="ttc" id="a_menu_8h_html"><div class="ttname"><a href="_menu_8h.html">Menu.h</a></div></div>
+<div class="ttc" id="aclass_zapis_html_a8dc2d59bac96d8bd5b1ae01e62e049c0"><div class="ttname"><a href="class_zapis.html#a8dc2d59bac96d8bd5b1ae01e62e049c0">Zapis::wyswietl</a></div><div class="ttdeci">void wyswietl(sf::RenderWindow &amp;window, const int cel_punktow, const int uzyskane_punkty, std::chrono::time_point&lt; std::chrono::system_clock &gt; start, std::chrono::time_point&lt; std::chrono::system_clock &gt; koniec)</div><div class="ttdoc">Metoda odpowiadająca za umożliwienie użytkownikowi decydowania oraz wyświetlenie treści.</div><div class="ttdef"><b>Definition:</b> Zapis.cpp:13</div></div>
+<div class="ttc" id="a_constants_and_includes_8h_html"><div class="ttname"><a href="_constants_and_includes_8h.html">ConstantsAndIncludes.h</a></div></div>
+<div class="ttc" id="aclass_zapis_html"><div class="ttname"><a href="class_zapis.html">Zapis</a></div><div class="ttdef"><b>Definition:</b> Zapis.h:10</div></div>
+<div class="ttc" id="aclass_zapis_html_a051faa4c658fb1c50aad98e54fb01e40"><div class="ttname"><a href="class_zapis.html#a051faa4c658fb1c50aad98e54fb01e40">Zapis::koniec_zapisu</a></div><div class="ttdeci">bool koniec_zapisu</div><div class="ttdoc">Zawiera informację, czy faza wyświetlania rankingów została zakończona</div><div class="ttdef"><b>Definition:</b> Zapis.h:15</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

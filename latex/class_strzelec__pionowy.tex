@@ -1,0 +1,96 @@
+\hypertarget{class_strzelec__pionowy}{}\doxysection{Dokumentacja klasy Strzelec\+\_\+pionowy}
+\label{class_strzelec__pionowy}\index{Strzelec\_pionowy@{Strzelec\_pionowy}}
+
+
+{\ttfamily \#include $<$Strzelec\+\_\+pionowy.\+h$>$}
+
+Diagram dziedziczenia dla Strzelec\+\_\+pionowy\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_strzelec__pionowy}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_strzelec__pionowy_a958099300fe7487bf16615c83bb7a6ba}{Strzelec\+\_\+pionowy}} (int \mbox{\hyperlink{class_postac_a5a2397cebdac57989a205e18b9bb40ba}{x}}, int \mbox{\hyperlink{class_postac_a29512919cf0f78d4685e911c257e273b}{y}}, std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela)
+\begin{DoxyCompactList}\small\item\em Konstruktor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_strzelec__pionowy_a8c19f12905bc60b7d7103cdb6f8107f5}{wykonaj\+\_\+ruch}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela, bool \&koniec)
+\begin{DoxyCompactList}\small\item\em Wykonany zostaje ruch odpowadający Strzelcowi pionowemu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_strzelec__pionowy_af03f716dafa40cdc4171937f2cbd54f1}{smierc}} (std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&tabela)
+\begin{DoxyCompactList}\small\item\em Śmierć Strzelca pionowego, usunięcie z planszy zajmowanych pól oraz strzału znajdującego się w locie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\doxysubsection{Opis szczegółowy}
+Dziedziczy po klasie \mbox{\hyperlink{class_postac}{Postac}}. Jeśli zostanie stworzony obiekt klasy \mbox{\hyperlink{class_strzelec__pionowy}{Strzelec\+\_\+pionowy}}, to będą wykonywane zdefiniowane tutaj ruchy i śmierć. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_strzelec__pionowy_a958099300fe7487bf16615c83bb7a6ba}\label{class_strzelec__pionowy_a958099300fe7487bf16615c83bb7a6ba}} 
+\index{Strzelec\_pionowy@{Strzelec\_pionowy}!Strzelec\_pionowy@{Strzelec\_pionowy}}
+\index{Strzelec\_pionowy@{Strzelec\_pionowy}!Strzelec\_pionowy@{Strzelec\_pionowy}}
+\doxysubsubsection{\texorpdfstring{Strzelec\_pionowy()}{Strzelec\_pionowy()}}
+{\footnotesize\ttfamily Strzelec\+\_\+pionowy\+::\+Strzelec\+\_\+pionowy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela }\end{DoxyParamCaption})}
+
+
+
+Konstruktor 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & położenie danego przeciwnika na osi x\\
+\hline
+{\em y} & położenie danego przeciwnika na osi y\\
+\hline
+{\em tabela} & jako referencja przekazywana jest cała tabela, ponieważ zostanie w niej umieszczony przeciwnik\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_strzelec__pionowy_af03f716dafa40cdc4171937f2cbd54f1}\label{class_strzelec__pionowy_af03f716dafa40cdc4171937f2cbd54f1}} 
+\index{Strzelec\_pionowy@{Strzelec\_pionowy}!smierc@{smierc}}
+\index{smierc@{smierc}!Strzelec\_pionowy@{Strzelec\_pionowy}}
+\doxysubsubsection{\texorpdfstring{smierc()}{smierc()}}
+{\footnotesize\ttfamily void Strzelec\+\_\+pionowy\+::smierc (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Śmierć Strzelca pionowego, usunięcie z planszy zajmowanych pól oraz strzału znajdującego się w locie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \mbox{\hyperlink{class_postac_aa8b87a881ff95588ad6ab62dd04c4668}{Postac}}.
+
+\mbox{\Hypertarget{class_strzelec__pionowy_a8c19f12905bc60b7d7103cdb6f8107f5}\label{class_strzelec__pionowy_a8c19f12905bc60b7d7103cdb6f8107f5}} 
+\index{Strzelec\_pionowy@{Strzelec\_pionowy}!wykonaj\_ruch@{wykonaj\_ruch}}
+\index{wykonaj\_ruch@{wykonaj\_ruch}!Strzelec\_pionowy@{Strzelec\_pionowy}}
+\doxysubsubsection{\texorpdfstring{wykonaj\_ruch()}{wykonaj\_ruch()}}
+{\footnotesize\ttfamily void Strzelec\+\_\+pionowy\+::wykonaj\+\_\+ruch (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ int $>$$>$ \&}]{tabela,  }\item[{bool \&}]{koniec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Wykonany zostaje ruch odpowadający Strzelcowi pionowemu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tabela} & jako referencja przekazywana jest cała tabela\\
+\hline
+{\em koniec} & referencja na pole typu bool, jeśli zajdzie taka potrzeba (strzał dotknie gracza), to gra jest kończona\\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \mbox{\hyperlink{class_postac_a7bd99b2ccf179eb82d34d5fd677255cf}{Postac}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_strzelec__pionowy_8h}{Strzelec\+\_\+pionowy.\+h}}\item 
+\mbox{\hyperlink{_strzelec__pionowy_8cpp}{Strzelec\+\_\+pionowy.\+cpp}}\end{DoxyCompactItemize}

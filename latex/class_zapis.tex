@@ -1,0 +1,105 @@
+\hypertarget{class_zapis}{}\doxysection{Dokumentacja klasy Zapis}
+\label{class_zapis}\index{Zapis@{Zapis}}
+
+
+{\ttfamily \#include $<$Zapis.\+h$>$}
+
+Diagram dziedziczenia dla Zapis\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_zapis}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_zapis_a59852e75402c011038fb13783d7153c4}{Zapis}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_zapis_a4edaca8f6a71efbeb7e0b03d882e33d3}{weryfikacja\+\_\+nazwy}} (std\+::string \&nazwa)
+\begin{DoxyCompactList}\small\item\em Metoda sprawdzająca, czy wprowadzona nazwa gracza spełnia narzucone wymagania, czyli zawiera tylko litery i cyfry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_zapis_a8dc2d59bac96d8bd5b1ae01e62e049c0}{wyswietl}} (sf\+::\+Render\+Window \&window, const int cel\+\_\+punktow, const int uzyskane\+\_\+punkty, std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::system\+\_\+clock $>$ start, std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::system\+\_\+clock $>$ koniec)
+\begin{DoxyCompactList}\small\item\em Metoda odpowiadająca za umożliwienie użytkownikowi decydowania oraz wyświetlenie treści. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_zapis_a051faa4c658fb1c50aad98e54fb01e40}{koniec\+\_\+zapisu}}
+\begin{DoxyCompactList}\small\item\em Zawiera informację, czy faza wyświetlania rankingów została zakończona \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa zajmująca się głównie etapem zapisu wyniku do pliku i wyświetleniem rankingów. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_zapis_a59852e75402c011038fb13783d7153c4}\label{class_zapis_a59852e75402c011038fb13783d7153c4}} 
+\index{Zapis@{Zapis}!Zapis@{Zapis}}
+\index{Zapis@{Zapis}!Zapis@{Zapis}}
+\doxysubsubsection{\texorpdfstring{Zapis()}{Zapis()}}
+{\footnotesize\ttfamily Zapis\+::\+Zapis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Konstruktor 
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_zapis_a4edaca8f6a71efbeb7e0b03d882e33d3}\label{class_zapis_a4edaca8f6a71efbeb7e0b03d882e33d3}} 
+\index{Zapis@{Zapis}!weryfikacja\_nazwy@{weryfikacja\_nazwy}}
+\index{weryfikacja\_nazwy@{weryfikacja\_nazwy}!Zapis@{Zapis}}
+\doxysubsubsection{\texorpdfstring{weryfikacja\_nazwy()}{weryfikacja\_nazwy()}}
+{\footnotesize\ttfamily bool Zapis\+::weryfikacja\+\_\+nazwy (\begin{DoxyParamCaption}\item[{std\+::string \&}]{nazwa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda sprawdzająca, czy wprowadzona nazwa gracza spełnia narzucone wymagania, czyli zawiera tylko litery i cyfry. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em nazwa} & przekazana jako referencja nazwa\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+zwracany zostaje wynik, jeśli nazwa spełnia wymagania to zwrócona jest prawda, w przeciwnym przypadku fałsz
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_zapis_a8dc2d59bac96d8bd5b1ae01e62e049c0}\label{class_zapis_a8dc2d59bac96d8bd5b1ae01e62e049c0}} 
+\index{Zapis@{Zapis}!wyswietl@{wyswietl}}
+\index{wyswietl@{wyswietl}!Zapis@{Zapis}}
+\doxysubsubsection{\texorpdfstring{wyswietl()}{wyswietl()}}
+{\footnotesize\ttfamily void Zapis\+::wyswietl (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{const int}]{cel\+\_\+punktow,  }\item[{const int}]{uzyskane\+\_\+punkty,  }\item[{std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::system\+\_\+clock $>$}]{start,  }\item[{std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::system\+\_\+clock $>$}]{koniec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Metoda odpowiadająca za umożliwienie użytkownikowi decydowania oraz wyświetlenie treści. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em window} & przekazywane jest jako parametr przez referencję aktualnie używane okno\\
+\hline
+{\em cel\+\_\+punktow} & przekazany zostaje ustawiony przez gracza cel punktów\\
+\hline
+{\em uzyskane\+\_\+punkty} & przekazane zostaje ile punktów udało się zdobyć graczowi\\
+\hline
+{\em start} & czas rozpoczęcia gry\\
+\hline
+{\em koniec} & czas zakończenia gry\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_zapis_a051faa4c658fb1c50aad98e54fb01e40}\label{class_zapis_a051faa4c658fb1c50aad98e54fb01e40}} 
+\index{Zapis@{Zapis}!koniec\_zapisu@{koniec\_zapisu}}
+\index{koniec\_zapisu@{koniec\_zapisu}!Zapis@{Zapis}}
+\doxysubsubsection{\texorpdfstring{koniec\_zapisu}{koniec\_zapisu}}
+{\footnotesize\ttfamily bool Zapis\+::koniec\+\_\+zapisu\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zawiera informację, czy faza wyświetlania rankingów została zakończona 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_zapis_8h}{Zapis.\+h}}\item 
+\mbox{\hyperlink{_zapis_8cpp}{Zapis.\+cpp}}\end{DoxyCompactItemize}

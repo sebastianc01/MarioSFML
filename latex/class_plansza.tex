@@ -1,0 +1,470 @@
+\hypertarget{class_plansza}{}\doxysection{Dokumentacja klasy Plansza}
+\label{class_plansza}\index{Plansza@{Plansza}}
+
+
+{\ttfamily \#include $<$Plansza.\+h$>$}
+
+Diagram dziedziczenia dla Plansza\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_plansza}
+\end{center}
+\end{figure}
+\doxysubsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_plansza_ae58ab9e9e0a12c39f36750a0faa2c100}{Plansza}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plansza_a309a6d99be5f1338afb62f2aa4aaa73b}{wypelnienie\+\_\+czesci\+\_\+tablicy}} (std\+::mt19937 \&gen, const int poczatekp, const int koniecp)
+\begin{DoxyCompactList}\small\item\em metoda zajmująca się wypełnieniem części tablicy \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plansza_a170804979fada0d68044d3cf11c4277d}{wypelnienie\+\_\+poczatkowych\+\_\+pol}} (std\+::mt19937 \&gen, const int poczatekp, const int koniecp)
+\begin{DoxyCompactList}\small\item\em wypełnienie podłogami określonej liczby pól (bezpieczne\+\_\+pola) by na samym początku na gracza nie czyhały żadne niebezpieczeństwa \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plansza_a85bc27b257f15f4b3b443d0c443b28d9}{Ladowanie\+Tekstur}} (sf\+::\+Texture \&mario\+\_\+tekstura\+\_\+prawa, sf\+::\+Texture \&mario\+\_\+tekstura\+\_\+lewa, sf\+::\+Texture \&podl\+\_\+tekstura, sf\+::\+Texture \&moneta\+\_\+tekstura, sf\+::\+Texture \&tlo\+\_\+tekstura, sf\+::\+Texture \&strzal\+\_\+poziomy\+\_\+tekstura, sf\+::\+Texture \&strzal\+\_\+pionowy\+\_\+tekstura, sf\+::\+Texture \&strzelec\+\_\+poziomy\+\_\+tekstura, sf\+::\+Texture \&strzelec\+\_\+pionowy\+\_\+tekstura, sf\+::\+Texture \&bomba\+\_\+tekstura)
+\begin{DoxyCompactList}\small\item\em metoda zajmująca się załadowaniem wszystkich używanych tekstur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plansza_afbee95fdb6544d792de9b38a58baa47d}{Rysowanie\+\_\+czesci\+\_\+planszy}} (const int \mbox{\hyperlink{class_plansza_a469599c231541b6696d4ff9ce00cb61c}{start}}, sf\+::\+Render\+Window \&window, sf\+::\+Texture \&tlo\+\_\+tekstura, sf\+::\+Texture \&podl\+\_\+tekstura, sf\+::\+Texture \&mario\+\_\+tekstura\+\_\+prawa, sf\+::\+Texture \&mario\+\_\+tekstura\+\_\+lewa, sf\+::\+Texture \&moneta\+\_\+tekstura, sf\+::\+Texture \&strzal\+\_\+poziomy\+\_\+tekstura, sf\+::\+Texture \&strzal\+\_\+pionowy\+\_\+tekstura, sf\+::\+Texture \&strzelec\+\_\+poziomy\+\_\+tekstura, sf\+::\+Texture \&strzelec\+\_\+pionowy\+\_\+tekstura, sf\+::\+Texture \&bomba\+\_\+tekstura)
+\begin{DoxyCompactList}\small\item\em metoda zajmująca się wyświetleniem aktualnego stanu planszy \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plansza_a38398972a684c6c89dcb2265dd51578b}{wyswietlenie}} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em główna metoda klasy, zajmuje się sterowaniem i koordynowaniem całego przebiegu gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_plansza_a149603cbb614c21f1519b4dcdde9409b}{ilosc\+Punktow}}
+\begin{DoxyCompactList}\small\item\em przechowuje całkowitą ilość punktów do zdobycia \end{DoxyCompactList}\item 
+std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::system\+\_\+clock $>$ \mbox{\hyperlink{class_plansza_a469599c231541b6696d4ff9ce00cb61c}{start}}
+\begin{DoxyCompactList}\small\item\em przechowuje czas startu gry \end{DoxyCompactList}\item 
+std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::system\+\_\+clock $>$ \mbox{\hyperlink{class_plansza_af36a03eb37b52e3ac24998d1988db7b1}{aktualny}}
+\begin{DoxyCompactList}\small\item\em używany pomocniczo w celu odczytania czasu w konkretnym momencie trwania, aktualnie tylko na końcu, lecz w przyszłości najprawdopodobniej będzie miał również inne zastosowania \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_plansza_a879731dfd6ff4acb1ac31ddef5887f57}{aktualna\+\_\+ilosc\+\_\+punktow}}
+\begin{DoxyCompactList}\small\item\em przechowuje aktualną ilość punktów zebraną przez gracza \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_plansza_ae8771cd59fe11802e2d04d926de6dc4f}{wypelnienie\+\_\+pola}} (const double wartosc, const int pole)
+\begin{DoxyCompactList}\small\item\em metoda zajmująca się wypełnieniem konkretnego pola tablicy \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plansza_a4eeb50a37b42c2ac27c75c43f597ca09}{wypelnienie\+\_\+mindlwys}} (const int wysokosc, int pole)
+\begin{DoxyCompactList}\small\item\em metoda sprawdzająca, czy wszystkie podłogi na poprzednim polu mają już wystarczającą długość, jeśli nie to wyspa zostaje przedłużona \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plansza_a2dc1a663261c1c58c8e42354169efb65}{stworzenie\+\_\+wyspy}} (const int i, const int pole)
+\begin{DoxyCompactList}\small\item\em sprawdzanie jest, czy spełniony jest warunek wygenerowania wyspy, czyli po prostu czy na poprzednich polach była wystarczająca ilość podłóg \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plansza_ab010e5991a344890f8eab568c7593920}{maksymalny\+\_\+odstep}} (const int pole)
+\begin{DoxyCompactList}\small\item\em sprawdzenie, czy nie występuje zbyt duża ilość pustych pól bez podłóg \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plansza_a54a6d4832eb334107cf6e284858e769b}{wykonanie\+\_\+skoku}} (const int pierwsze\+\_\+wyswietlane\+\_\+pole)
+\begin{DoxyCompactList}\small\item\em wykonanie skoku, przypisuje wartość polu skok \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plansza_a1e1cb696b17033d730c2b5839f94c870}{sprawdzenie\+\_\+pola}} (int i, int k)
+\begin{DoxyCompactList}\small\item\em sprawdzenie pola na które będzie wchodził gracz \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plansza_a721ea0dd7526a45883844a09216719a2}{smierc}} (int i, int k)
+\begin{DoxyCompactList}\small\item\em gracz poniósł klęskę \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plansza_a68cb243026dbc0a68b4d05657e8034ec}{fizyka\+\_\+postaci\+\_\+pion}} (const int pierwsze\+\_\+wyswietlane\+\_\+pole)
+\begin{DoxyCompactList}\small\item\em fizyka postaci (gracza) w pionie \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plansza_a27e920dc4cb07c8061e0feb561301b7a}{ruch\+\_\+w\+\_\+prawo}} (const int pierwsze\+\_\+wyswietlane\+\_\+pole)
+\begin{DoxyCompactList}\small\item\em postać zostaje przesunięta w prawo (jeśli jest taka możliwość) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plansza_ac087d3c893e606feea7014d9ba9490ea}{czy\+\_\+postac\+\_\+jest\+\_\+w\+\_\+danej\+\_\+kolumnie}} (const int kolumna)
+\begin{DoxyCompactList}\small\item\em sprawdzenie, czy postać znajduje się w danej kolumnie \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plansza_a92a624bc66b3e1ab1118ea021aec22dd}{ruch\+\_\+w\+\_\+lewo}} (const int pierwsze\+\_\+wyswietlane\+\_\+pole)
+\begin{DoxyCompactList}\small\item\em postać zostaje przesunięta w lewo (jeśli jest taka możliwość) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{class_plansza_afb21e42226b0d03598c379bc1d5d8ef5}{tabela}}
+\begin{DoxyCompactList}\small\item\em tablica dwuwymiarowa integerów, to w niej przechowywany jest aktualny stan planszy zawierający potwory, gracza i strzały, podłogę, tło i monety. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plansza_a88f420ba6d6067e44812baa2982b9a3c}{generowanie}}
+\begin{DoxyCompactList}\small\item\em gdy gracz przejdzie na konkretne pola (ich położenie jest zależne od ustawionej długości planszy) to rozpoczyna się generowanie fragmentu (1/3) planszy, jednak gracz może stać na tym polu dłużej i żeby zapobiec uruchamianiu większej ilości wątków fakt odbywającej się generacji jest zawarty tutaj. \end{DoxyCompactList}\item 
+std\+::barrier \mbox{\hyperlink{class_plansza_ac89cbd5e4776e15ca44f43abb0e78e5b}{bariera}}
+\begin{DoxyCompactList}\small\item\em bariera synchronizująca rozpoczęcie gry, ładowanie tekstur i wypełnianie pierwszych 2/3 planszy \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_plansza_a0a19942e3a8bbabb8e943fab63f18589}{koniec}}
+\begin{DoxyCompactList}\small\item\em przechowuje informacje o tym, czy etap faktycznej gry został zakończony \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_plansza_a482474f24abb604a31091d7c64631820}{skok}}
+\begin{DoxyCompactList}\small\item\em standardowo ustawiona na 0, gdy użytkownik naciśnie klawisz skoku zmieniona zostaje na ilość pól, na którą podskoczy postać z miejsca obecnego \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Klasa odpowiadająca głównie za zarządzanie planszą i jej wyświetlanie, jak i umożliwienie sterowania graczowi. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_plansza_ae58ab9e9e0a12c39f36750a0faa2c100}\label{class_plansza_ae58ab9e9e0a12c39f36750a0faa2c100}} 
+\index{Plansza@{Plansza}!Plansza@{Plansza}}
+\index{Plansza@{Plansza}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{Plansza()}{Plansza()}}
+{\footnotesize\ttfamily Plansza\+::\+Plansza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Konstruktor 
+
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_plansza_ac087d3c893e606feea7014d9ba9490ea}\label{class_plansza_ac087d3c893e606feea7014d9ba9490ea}} 
+\index{Plansza@{Plansza}!czy\_postac\_jest\_w\_danej\_kolumnie@{czy\_postac\_jest\_w\_danej\_kolumnie}}
+\index{czy\_postac\_jest\_w\_danej\_kolumnie@{czy\_postac\_jest\_w\_danej\_kolumnie}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{czy\_postac\_jest\_w\_danej\_kolumnie()}{czy\_postac\_jest\_w\_danej\_kolumnie()}}
+{\footnotesize\ttfamily bool Plansza\+::czy\+\_\+postac\+\_\+jest\+\_\+w\+\_\+danej\+\_\+kolumnie (\begin{DoxyParamCaption}\item[{const int}]{kolumna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+sprawdzenie, czy postać znajduje się w danej kolumnie 
+
+
+\begin{DoxyParams}{Parametry}
+{\em kolumna} & współrzędna x\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+zwraca true jeśli gracz znajduje się w przekazanej jako argument kolumnie, w przeciwnym przypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a68cb243026dbc0a68b4d05657e8034ec}\label{class_plansza_a68cb243026dbc0a68b4d05657e8034ec}} 
+\index{Plansza@{Plansza}!fizyka\_postaci\_pion@{fizyka\_postaci\_pion}}
+\index{fizyka\_postaci\_pion@{fizyka\_postaci\_pion}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{fizyka\_postaci\_pion()}{fizyka\_postaci\_pion()}}
+{\footnotesize\ttfamily void Plansza\+::fizyka\+\_\+postaci\+\_\+pion (\begin{DoxyParamCaption}\item[{const int}]{pierwsze\+\_\+wyswietlane\+\_\+pole }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+fizyka postaci (gracza) w pionie 
+
+
+\begin{DoxyParams}{Parametry}
+{\em pierwsze\+\_\+wyswietlane\+\_\+pole} & pierwsze wyswietlane pole, gracz zawsze znajduje się pomiędzy nim lub parę pól dalej (ich ilość znajduje się w pliku \mbox{\hyperlink{_constants_and_includes_8h}{Constants\+And\+Includes.\+h}} i jest modyfikowalna)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a85bc27b257f15f4b3b443d0c443b28d9}\label{class_plansza_a85bc27b257f15f4b3b443d0c443b28d9}} 
+\index{Plansza@{Plansza}!LadowanieTekstur@{LadowanieTekstur}}
+\index{LadowanieTekstur@{LadowanieTekstur}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{LadowanieTekstur()}{LadowanieTekstur()}}
+{\footnotesize\ttfamily void Plansza\+::\+Ladowanie\+Tekstur (\begin{DoxyParamCaption}\item[{sf\+::\+Texture \&}]{mario\+\_\+tekstura\+\_\+prawa,  }\item[{sf\+::\+Texture \&}]{mario\+\_\+tekstura\+\_\+lewa,  }\item[{sf\+::\+Texture \&}]{podl\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{moneta\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{tlo\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{strzal\+\_\+poziomy\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{strzal\+\_\+pionowy\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{strzelec\+\_\+poziomy\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{strzelec\+\_\+pionowy\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{bomba\+\_\+tekstura }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+metoda zajmująca się załadowaniem wszystkich używanych tekstur 
+
+\mbox{\Hypertarget{class_plansza_ab010e5991a344890f8eab568c7593920}\label{class_plansza_ab010e5991a344890f8eab568c7593920}} 
+\index{Plansza@{Plansza}!maksymalny\_odstep@{maksymalny\_odstep}}
+\index{maksymalny\_odstep@{maksymalny\_odstep}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{maksymalny\_odstep()}{maksymalny\_odstep()}}
+{\footnotesize\ttfamily bool Plansza\+::maksymalny\+\_\+odstep (\begin{DoxyParamCaption}\item[{const int}]{pole }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+sprawdzenie, czy nie występuje zbyt duża ilość pustych pól bez podłóg 
+
+
+\begin{DoxyParams}{Parametry}
+{\em pole} & aktualna współrzędna x\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wartość true oznacza, że występowała podłoga na sprawdzonych polach. W przypadku false tworzona jest podługa na samym dole planszy (pozycja y\+: wysokosc\+\_\+planszy -\/ 1)
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a92a624bc66b3e1ab1118ea021aec22dd}\label{class_plansza_a92a624bc66b3e1ab1118ea021aec22dd}} 
+\index{Plansza@{Plansza}!ruch\_w\_lewo@{ruch\_w\_lewo}}
+\index{ruch\_w\_lewo@{ruch\_w\_lewo}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{ruch\_w\_lewo()}{ruch\_w\_lewo()}}
+{\footnotesize\ttfamily bool Plansza\+::ruch\+\_\+w\+\_\+lewo (\begin{DoxyParamCaption}\item[{const int}]{pierwsze\+\_\+wyswietlane\+\_\+pole }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+postać zostaje przesunięta w lewo (jeśli jest taka możliwość) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em pierwsze\+\_\+wyswietlane\+\_\+pole} & pierwsze wyswietlane pole, gracz zawsze znajduje się pomiędzy nim lub parę pól dalej (ich ilość znajduje się w pliku \mbox{\hyperlink{_constants_and_includes_8h}{Constants\+And\+Includes.\+h}} i jest modyfikowalna)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+zwraca wartość true jeśli udało się wykonać ruch, w przeciwnym przypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a27e920dc4cb07c8061e0feb561301b7a}\label{class_plansza_a27e920dc4cb07c8061e0feb561301b7a}} 
+\index{Plansza@{Plansza}!ruch\_w\_prawo@{ruch\_w\_prawo}}
+\index{ruch\_w\_prawo@{ruch\_w\_prawo}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{ruch\_w\_prawo()}{ruch\_w\_prawo()}}
+{\footnotesize\ttfamily bool Plansza\+::ruch\+\_\+w\+\_\+prawo (\begin{DoxyParamCaption}\item[{const int}]{pierwsze\+\_\+wyswietlane\+\_\+pole }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+postać zostaje przesunięta w prawo (jeśli jest taka możliwość) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em pierwsze\+\_\+wyswietlane\+\_\+pole} & pierwsze wyswietlane pole, gracz zawsze znajduje się pomiędzy nim lub parę pól dalej (ich ilość znajduje się w pliku \mbox{\hyperlink{_constants_and_includes_8h}{Constants\+And\+Includes.\+h}} i jest modyfikowalna)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+zwraca wartość true jeśli udało się wykonać ruch, w przeciwnym przypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_afbee95fdb6544d792de9b38a58baa47d}\label{class_plansza_afbee95fdb6544d792de9b38a58baa47d}} 
+\index{Plansza@{Plansza}!Rysowanie\_czesci\_planszy@{Rysowanie\_czesci\_planszy}}
+\index{Rysowanie\_czesci\_planszy@{Rysowanie\_czesci\_planszy}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{Rysowanie\_czesci\_planszy()}{Rysowanie\_czesci\_planszy()}}
+{\footnotesize\ttfamily void Plansza\+::\+Rysowanie\+\_\+czesci\+\_\+planszy (\begin{DoxyParamCaption}\item[{const int}]{start,  }\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+Texture \&}]{tlo\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{podl\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{mario\+\_\+tekstura\+\_\+prawa,  }\item[{sf\+::\+Texture \&}]{mario\+\_\+tekstura\+\_\+lewa,  }\item[{sf\+::\+Texture \&}]{moneta\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{strzal\+\_\+poziomy\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{strzal\+\_\+pionowy\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{strzelec\+\_\+poziomy\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{strzelec\+\_\+pionowy\+\_\+tekstura,  }\item[{sf\+::\+Texture \&}]{bomba\+\_\+tekstura }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+metoda zajmująca się wyświetleniem aktualnego stanu planszy 
+
+
+\begin{DoxyParams}{Parametry}
+{\em start} & współrzędna x, od niej zacznie się wyświetlanie planszy\\
+\hline
+{\em window} & przekazywane jest jako parametr aktualnie używane okno\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a721ea0dd7526a45883844a09216719a2}\label{class_plansza_a721ea0dd7526a45883844a09216719a2}} 
+\index{Plansza@{Plansza}!smierc@{smierc}}
+\index{smierc@{smierc}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{smierc()}{smierc()}}
+{\footnotesize\ttfamily void Plansza\+::smierc (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+gracz poniósł klęskę 
+
+
+\begin{DoxyParams}{Parametry}
+{\em i} & wysokość\\
+\hline
+{\em k} & aktualna współrzędna x\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a1e1cb696b17033d730c2b5839f94c870}\label{class_plansza_a1e1cb696b17033d730c2b5839f94c870}} 
+\index{Plansza@{Plansza}!sprawdzenie\_pola@{sprawdzenie\_pola}}
+\index{sprawdzenie\_pola@{sprawdzenie\_pola}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{sprawdzenie\_pola()}{sprawdzenie\_pola()}}
+{\footnotesize\ttfamily bool Plansza\+::sprawdzenie\+\_\+pola (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+sprawdzenie pola na które będzie wchodził gracz 
+
+
+\begin{DoxyParams}{Parametry}
+{\em i} & wysokość\\
+\hline
+{\em k} & aktualna współrzędna x\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wartość true oznacza, że nie ma przeciwwskazań do wykonania ruchu
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a2dc1a663261c1c58c8e42354169efb65}\label{class_plansza_a2dc1a663261c1c58c8e42354169efb65}} 
+\index{Plansza@{Plansza}!stworzenie\_wyspy@{stworzenie\_wyspy}}
+\index{stworzenie\_wyspy@{stworzenie\_wyspy}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{stworzenie\_wyspy()}{stworzenie\_wyspy()}}
+{\footnotesize\ttfamily bool Plansza\+::stworzenie\+\_\+wyspy (\begin{DoxyParamCaption}\item[{const int}]{i,  }\item[{const int}]{pole }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+sprawdzanie jest, czy spełniony jest warunek wygenerowania wyspy, czyli po prostu czy na poprzednich polach była wystarczająca ilość podłóg 
+
+
+\begin{DoxyParams}{Parametry}
+{\em i} & wysokość\\
+\hline
+{\em pole} & aktualna współrzędna x\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wartość true oznacza możliwość stworzenia wyspy
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a54a6d4832eb334107cf6e284858e769b}\label{class_plansza_a54a6d4832eb334107cf6e284858e769b}} 
+\index{Plansza@{Plansza}!wykonanie\_skoku@{wykonanie\_skoku}}
+\index{wykonanie\_skoku@{wykonanie\_skoku}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{wykonanie\_skoku()}{wykonanie\_skoku()}}
+{\footnotesize\ttfamily void Plansza\+::wykonanie\+\_\+skoku (\begin{DoxyParamCaption}\item[{const int}]{pierwsze\+\_\+wyswietlane\+\_\+pole }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+wykonanie skoku, przypisuje wartość polu skok 
+
+
+\begin{DoxyParams}{Parametry}
+{\em pierwsze\+\_\+wyswietlane\+\_\+pole} & pierwsze wyswietlane pole, gracz zawsze znajduje się pomiędzy nim lub parę pól dalej (ich ilość znajduje się w pliku \mbox{\hyperlink{_constants_and_includes_8h}{Constants\+And\+Includes.\+h}} i jest modyfikowalna)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a309a6d99be5f1338afb62f2aa4aaa73b}\label{class_plansza_a309a6d99be5f1338afb62f2aa4aaa73b}} 
+\index{Plansza@{Plansza}!wypelnienie\_czesci\_tablicy@{wypelnienie\_czesci\_tablicy}}
+\index{wypelnienie\_czesci\_tablicy@{wypelnienie\_czesci\_tablicy}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{wypelnienie\_czesci\_tablicy()}{wypelnienie\_czesci\_tablicy()}}
+{\footnotesize\ttfamily void Plansza\+::wypelnienie\+\_\+czesci\+\_\+tablicy (\begin{DoxyParamCaption}\item[{std\+::mt19937 \&}]{gen,  }\item[{const int}]{poczatekp,  }\item[{const int}]{koniecp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+metoda zajmująca się wypełnieniem części tablicy 
+
+
+\begin{DoxyParams}{Parametry}
+{\em gen} & przekazany przez referencję generator\\
+\hline
+{\em poczatekp} & współrzędna x, od niej zacznie się generowanie planszy\\
+\hline
+{\em koniecp} & współrzędna x, na niej zakończy się generowanie planszy\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a4eeb50a37b42c2ac27c75c43f597ca09}\label{class_plansza_a4eeb50a37b42c2ac27c75c43f597ca09}} 
+\index{Plansza@{Plansza}!wypelnienie\_mindlwys@{wypelnienie\_mindlwys}}
+\index{wypelnienie\_mindlwys@{wypelnienie\_mindlwys}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{wypelnienie\_mindlwys()}{wypelnienie\_mindlwys()}}
+{\footnotesize\ttfamily bool Plansza\+::wypelnienie\+\_\+mindlwys (\begin{DoxyParamCaption}\item[{const int}]{wysokosc,  }\item[{int}]{pole }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+metoda sprawdzająca, czy wszystkie podłogi na poprzednim polu mają już wystarczającą długość, jeśli nie to wyspa zostaje przedłużona 
+
+
+\begin{DoxyParams}{Parametry}
+{\em wysokosc} & sprawdzana wysokość\\
+\hline
+{\em pole} & aktualna współrzędna x\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wartość true oznacza przedłużenie wyspy
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_plansza_a170804979fada0d68044d3cf11c4277d}\label{class_plansza_a170804979fada0d68044d3cf11c4277d}} 
+\index{Plansza@{Plansza}!wypelnienie\_poczatkowych\_pol@{wypelnienie\_poczatkowych\_pol}}
+\index{wypelnienie\_poczatkowych\_pol@{wypelnienie\_poczatkowych\_pol}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{wypelnienie\_poczatkowych\_pol()}{wypelnienie\_poczatkowych\_pol()}}
+{\footnotesize\ttfamily void Plansza\+::wypelnienie\+\_\+poczatkowych\+\_\+pol (\begin{DoxyParamCaption}\item[{std\+::mt19937 \&}]{gen,  }\item[{const int}]{poczatekp,  }\item[{const int}]{koniecp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+wypełnienie podłogami określonej liczby pól (bezpieczne\+\_\+pola) by na samym początku na gracza nie czyhały żadne niebezpieczeństwa 
+
+
+\begin{DoxyParams}{Parametry}
+{\em gen} & przekazany przez referencję generator\\
+\hline
+{\em poczatekp} & współrzędna x, od niej zacznie się generowanie planszy\\
+\hline
+{\em koniecp} & współrzędna x, na niej zakończy się generowanie planszy\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_ae8771cd59fe11802e2d04d926de6dc4f}\label{class_plansza_ae8771cd59fe11802e2d04d926de6dc4f}} 
+\index{Plansza@{Plansza}!wypelnienie\_pola@{wypelnienie\_pola}}
+\index{wypelnienie\_pola@{wypelnienie\_pola}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{wypelnienie\_pola()}{wypelnienie\_pola()}}
+{\footnotesize\ttfamily void Plansza\+::wypelnienie\+\_\+pola (\begin{DoxyParamCaption}\item[{const double}]{wartosc,  }\item[{const int}]{pole }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+metoda zajmująca się wypełnieniem konkretnego pola tablicy 
+
+
+\begin{DoxyParams}{Parametry}
+{\em wartosc} & wartość \char`\"{}losowa\char`\"{} od której zależeć będzie generowany element\\
+\hline
+{\em pole} & współrzędna x planszy\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_plansza_a38398972a684c6c89dcb2265dd51578b}\label{class_plansza_a38398972a684c6c89dcb2265dd51578b}} 
+\index{Plansza@{Plansza}!wyswietlenie@{wyswietlenie}}
+\index{wyswietlenie@{wyswietlenie}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{wyswietlenie()}{wyswietlenie()}}
+{\footnotesize\ttfamily void Plansza\+::wyswietlenie (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+główna metoda klasy, zajmuje się sterowaniem i koordynowaniem całego przebiegu gry 
+
+
+\begin{DoxyParams}{Parametry}
+{\em window} & przekazywane jest jako parametr aktualnie używane okno\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_plansza_a879731dfd6ff4acb1ac31ddef5887f57}\label{class_plansza_a879731dfd6ff4acb1ac31ddef5887f57}} 
+\index{Plansza@{Plansza}!aktualna\_ilosc\_punktow@{aktualna\_ilosc\_punktow}}
+\index{aktualna\_ilosc\_punktow@{aktualna\_ilosc\_punktow}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{aktualna\_ilosc\_punktow}{aktualna\_ilosc\_punktow}}
+{\footnotesize\ttfamily int Plansza\+::aktualna\+\_\+ilosc\+\_\+punktow\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+przechowuje aktualną ilość punktów zebraną przez gracza 
+
+\mbox{\Hypertarget{class_plansza_af36a03eb37b52e3ac24998d1988db7b1}\label{class_plansza_af36a03eb37b52e3ac24998d1988db7b1}} 
+\index{Plansza@{Plansza}!aktualny@{aktualny}}
+\index{aktualny@{aktualny}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{aktualny}{aktualny}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$std\+::chrono\+::system\+\_\+clock$>$ Plansza\+::aktualny\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+używany pomocniczo w celu odczytania czasu w konkretnym momencie trwania, aktualnie tylko na końcu, lecz w przyszłości najprawdopodobniej będzie miał również inne zastosowania 
+
+\mbox{\Hypertarget{class_plansza_ac89cbd5e4776e15ca44f43abb0e78e5b}\label{class_plansza_ac89cbd5e4776e15ca44f43abb0e78e5b}} 
+\index{Plansza@{Plansza}!bariera@{bariera}}
+\index{bariera@{bariera}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{bariera}{bariera}}
+{\footnotesize\ttfamily std\+::barrier Plansza\+::bariera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+bariera synchronizująca rozpoczęcie gry, ładowanie tekstur i wypełnianie pierwszych 2/3 planszy 
+
+\mbox{\Hypertarget{class_plansza_a88f420ba6d6067e44812baa2982b9a3c}\label{class_plansza_a88f420ba6d6067e44812baa2982b9a3c}} 
+\index{Plansza@{Plansza}!generowanie@{generowanie}}
+\index{generowanie@{generowanie}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{generowanie}{generowanie}}
+{\footnotesize\ttfamily bool Plansza\+::generowanie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+gdy gracz przejdzie na konkretne pola (ich położenie jest zależne od ustawionej długości planszy) to rozpoczyna się generowanie fragmentu (1/3) planszy, jednak gracz może stać na tym polu dłużej i żeby zapobiec uruchamianiu większej ilości wątków fakt odbywającej się generacji jest zawarty tutaj. 
+
+\mbox{\Hypertarget{class_plansza_a149603cbb614c21f1519b4dcdde9409b}\label{class_plansza_a149603cbb614c21f1519b4dcdde9409b}} 
+\index{Plansza@{Plansza}!iloscPunktow@{iloscPunktow}}
+\index{iloscPunktow@{iloscPunktow}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{iloscPunktow}{iloscPunktow}}
+{\footnotesize\ttfamily int Plansza\+::ilosc\+Punktow\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+przechowuje całkowitą ilość punktów do zdobycia 
+
+\mbox{\Hypertarget{class_plansza_a0a19942e3a8bbabb8e943fab63f18589}\label{class_plansza_a0a19942e3a8bbabb8e943fab63f18589}} 
+\index{Plansza@{Plansza}!koniec@{koniec}}
+\index{koniec@{koniec}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{koniec}{koniec}}
+{\footnotesize\ttfamily bool Plansza\+::koniec\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+przechowuje informacje o tym, czy etap faktycznej gry został zakończony 
+
+\mbox{\Hypertarget{class_plansza_a482474f24abb604a31091d7c64631820}\label{class_plansza_a482474f24abb604a31091d7c64631820}} 
+\index{Plansza@{Plansza}!skok@{skok}}
+\index{skok@{skok}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{skok}{skok}}
+{\footnotesize\ttfamily int Plansza\+::skok\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+standardowo ustawiona na 0, gdy użytkownik naciśnie klawisz skoku zmieniona zostaje na ilość pól, na którą podskoczy postać z miejsca obecnego 
+
+\mbox{\Hypertarget{class_plansza_a469599c231541b6696d4ff9ce00cb61c}\label{class_plansza_a469599c231541b6696d4ff9ce00cb61c}} 
+\index{Plansza@{Plansza}!start@{start}}
+\index{start@{start}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily std\+::chrono\+::time\+\_\+point$<$std\+::chrono\+::system\+\_\+clock$>$ Plansza\+::start\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+przechowuje czas startu gry 
+
+\mbox{\Hypertarget{class_plansza_afb21e42226b0d03598c379bc1d5d8ef5}\label{class_plansza_afb21e42226b0d03598c379bc1d5d8ef5}} 
+\index{Plansza@{Plansza}!tabela@{tabela}}
+\index{tabela@{tabela}!Plansza@{Plansza}}
+\doxysubsubsection{\texorpdfstring{tabela}{tabela}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ Plansza\+::tabela\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+tablica dwuwymiarowa integerów, to w niej przechowywany jest aktualny stan planszy zawierający potwory, gracza i strzały, podłogę, tło i monety. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_plansza_8h}{Plansza.\+h}}\item 
+\mbox{\hyperlink{_plansza_8cpp}{Plansza.\+cpp}}\end{DoxyCompactItemize}

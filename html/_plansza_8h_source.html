@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zmodyfikowana gra Mario: Plik źródłowy Plansza.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zmodyfikowana gra Mario
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Plansza.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_plansza_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_constants_and_includes_8h.html">ConstantsAndIncludes.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_struktury_i_funkcje_8h.html">StrukturyIFunkcje.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_przeciwnicy_8h.html">Przeciwnicy.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_menu_8h.html">Menu.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_plansza.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_plansza.html">Plansza</a> : <span class="keyword">public</span> <a class="code" href="class_przeciwnicy.html">Przeciwnicy</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_plansza.html#afb21e42226b0d03598c379bc1d5d8ef5">   13</a></span>&#160;    std::vector&lt;std::vector&lt;int&gt;&gt; <a class="code" href="class_plansza.html#afb21e42226b0d03598c379bc1d5d8ef5">tabela</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_plansza.html#a88f420ba6d6067e44812baa2982b9a3c">   18</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_plansza.html#a88f420ba6d6067e44812baa2982b9a3c">generowanie</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_plansza.html#ac89cbd5e4776e15ca44f43abb0e78e5b">   22</a></span>&#160;    std::barrier&lt;&gt; <a class="code" href="class_plansza.html#ac89cbd5e4776e15ca44f43abb0e78e5b">bariera</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_plansza.html#a0a19942e3a8bbabb8e943fab63f18589">   26</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_plansza.html#a0a19942e3a8bbabb8e943fab63f18589">koniec</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_plansza.html#a482474f24abb604a31091d7c64631820">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_plansza.html#a482474f24abb604a31091d7c64631820">skok</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plansza.html#ae8771cd59fe11802e2d04d926de6dc4f">wypelnienie_pola</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> wartosc, <span class="keyword">const</span> <span class="keywordtype">int</span> pole);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_plansza.html#a4eeb50a37b42c2ac27c75c43f597ca09">wypelnienie_mindlwys</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> wysokosc, <span class="keywordtype">int</span> pole);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_plansza.html#a2dc1a663261c1c58c8e42354169efb65">stworzenie_wyspy</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> i, <span class="keyword">const</span> <span class="keywordtype">int</span> pole); </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_plansza.html#ab010e5991a344890f8eab568c7593920">maksymalny_odstep</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> pole);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plansza.html#a54a6d4832eb334107cf6e284858e769b">wykonanie_skoku</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> pierwsze_wyswietlane_pole);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_plansza.html#a1e1cb696b17033d730c2b5839f94c870">sprawdzenie_pola</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> k);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plansza.html#a721ea0dd7526a45883844a09216719a2">smierc</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> k); </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plansza.html#a68cb243026dbc0a68b4d05657e8034ec">fizyka_postaci_pion</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> pierwsze_wyswietlane_pole);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_plansza.html#a27e920dc4cb07c8061e0feb561301b7a">ruch_w_prawo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> pierwsze_wyswietlane_pole);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_plansza.html#ac087d3c893e606feea7014d9ba9490ea">czy_postac_jest_w_danej_kolumnie</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> kolumna);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_plansza.html#a92a624bc66b3e1ab1118ea021aec22dd">ruch_w_lewo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> pierwsze_wyswietlane_pole);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_plansza.html#a149603cbb614c21f1519b4dcdde9409b">  102</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_plansza.html#a149603cbb614c21f1519b4dcdde9409b">iloscPunktow</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_plansza.html#a469599c231541b6696d4ff9ce00cb61c">  106</a></span>&#160;    std::chrono::time_point&lt;std::chrono::system_clock&gt; <a class="code" href="class_plansza.html#a469599c231541b6696d4ff9ce00cb61c">start</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_plansza.html#af36a03eb37b52e3ac24998d1988db7b1">  110</a></span>&#160;    std::chrono::time_point&lt;std::chrono::system_clock&gt; <a class="code" href="class_plansza.html#af36a03eb37b52e3ac24998d1988db7b1">aktualny</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_plansza.html#a879731dfd6ff4acb1ac31ddef5887f57">  114</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_plansza.html#a879731dfd6ff4acb1ac31ddef5887f57">aktualna_ilosc_punktow</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="class_plansza.html#ae58ab9e9e0a12c39f36750a0faa2c100">Plansza</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plansza.html#a309a6d99be5f1338afb62f2aa4aaa73b">wypelnienie_czesci_tablicy</a>(std::mt19937&amp; gen, <span class="keyword">const</span> <span class="keywordtype">int</span> poczatekp, <span class="keyword">const</span> <span class="keywordtype">int</span> koniecp);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plansza.html#a170804979fada0d68044d3cf11c4277d">wypelnienie_poczatkowych_pol</a>(std::mt19937&amp; gen, <span class="keyword">const</span> <span class="keywordtype">int</span> poczatekp, <span class="keyword">const</span> <span class="keywordtype">int</span> koniecp);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plansza.html#a85bc27b257f15f4b3b443d0c443b28d9">LadowanieTekstur</a>(sf::Texture&amp; mario_tekstura_prawa, sf::Texture&amp; mario_tekstura_lewa, sf::Texture&amp; podl_tekstura, sf::Texture&amp; moneta_tekstura, sf::Texture&amp; tlo_tekstura, sf::Texture&amp; strzal_poziomy_tekstura, sf::Texture&amp; strzal_pionowy_tekstura, sf::Texture&amp; strzelec_poziomy_tekstura, sf::Texture&amp; strzelec_pionowy_tekstura, sf::Texture&amp; bomba_tekstura);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plansza.html#afbee95fdb6544d792de9b38a58baa47d">Rysowanie_czesci_planszy</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_plansza.html#a469599c231541b6696d4ff9ce00cb61c">start</a>, sf::RenderWindow&amp; window, sf::Texture&amp; tlo_tekstura, sf::Texture&amp; podl_tekstura, sf::Texture&amp; mario_tekstura_prawa, sf::Texture&amp; mario_tekstura_lewa, sf::Texture&amp; moneta_tekstura, sf::Texture&amp; strzal_poziomy_tekstura, sf::Texture&amp; strzal_pionowy_tekstura, sf::Texture&amp; strzelec_poziomy_tekstura, sf::Texture&amp; strzelec_pionowy_tekstura, sf::Texture&amp; bomba_tekstura);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_plansza.html#a38398972a684c6c89dcb2265dd51578b">wyswietlenie</a>(sf::RenderWindow&amp; window);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_plansza_html_ae8771cd59fe11802e2d04d926de6dc4f"><div class="ttname"><a href="class_plansza.html#ae8771cd59fe11802e2d04d926de6dc4f">Plansza::wypelnienie_pola</a></div><div class="ttdeci">void wypelnienie_pola(const double wartosc, const int pole)</div><div class="ttdoc">metoda zajmująca się wypełnieniem konkretnego pola tablicy</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:25</div></div>
+<div class="ttc" id="aclass_plansza_html_a309a6d99be5f1338afb62f2aa4aaa73b"><div class="ttname"><a href="class_plansza.html#a309a6d99be5f1338afb62f2aa4aaa73b">Plansza::wypelnienie_czesci_tablicy</a></div><div class="ttdeci">void wypelnienie_czesci_tablicy(std::mt19937 &amp;gen, const int poczatekp, const int koniecp)</div><div class="ttdoc">metoda zajmująca się wypełnieniem części tablicy</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:13</div></div>
+<div class="ttc" id="aclass_plansza_html_a92a624bc66b3e1ab1118ea021aec22dd"><div class="ttname"><a href="class_plansza.html#a92a624bc66b3e1ab1118ea021aec22dd">Plansza::ruch_w_lewo</a></div><div class="ttdeci">bool ruch_w_lewo(const int pierwsze_wyswietlane_pole)</div><div class="ttdoc">postać zostaje przesunięta w lewo (jeśli jest taka możliwość)</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:353</div></div>
+<div class="ttc" id="aclass_plansza_html_ac087d3c893e606feea7014d9ba9490ea"><div class="ttname"><a href="class_plansza.html#ac087d3c893e606feea7014d9ba9490ea">Plansza::czy_postac_jest_w_danej_kolumnie</a></div><div class="ttdeci">bool czy_postac_jest_w_danej_kolumnie(const int kolumna)</div><div class="ttdoc">sprawdzenie, czy postać znajduje się w danej kolumnie</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:374</div></div>
+<div class="ttc" id="aclass_plansza_html_a0a19942e3a8bbabb8e943fab63f18589"><div class="ttname"><a href="class_plansza.html#a0a19942e3a8bbabb8e943fab63f18589">Plansza::koniec</a></div><div class="ttdeci">bool koniec</div><div class="ttdoc">przechowuje informacje o tym, czy etap faktycznej gry został zakończony</div><div class="ttdef"><b>Definition:</b> Plansza.h:26</div></div>
+<div class="ttc" id="aclass_plansza_html_a482474f24abb604a31091d7c64631820"><div class="ttname"><a href="class_plansza.html#a482474f24abb604a31091d7c64631820">Plansza::skok</a></div><div class="ttdeci">int skok</div><div class="ttdoc">standardowo ustawiona na 0, gdy użytkownik naciśnie klawisz skoku zmieniona zostaje na ilość pól,...</div><div class="ttdef"><b>Definition:</b> Plansza.h:30</div></div>
+<div class="ttc" id="aclass_plansza_html_afb21e42226b0d03598c379bc1d5d8ef5"><div class="ttname"><a href="class_plansza.html#afb21e42226b0d03598c379bc1d5d8ef5">Plansza::tabela</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; tabela</div><div class="ttdoc">tablica dwuwymiarowa integerów, to w niej przechowywany jest aktualny stan planszy zawierający potwor...</div><div class="ttdef"><b>Definition:</b> Plansza.h:13</div></div>
+<div class="ttc" id="aclass_plansza_html_a27e920dc4cb07c8061e0feb561301b7a"><div class="ttname"><a href="class_plansza.html#a27e920dc4cb07c8061e0feb561301b7a">Plansza::ruch_w_prawo</a></div><div class="ttdeci">bool ruch_w_prawo(const int pierwsze_wyswietlane_pole)</div><div class="ttdoc">postać zostaje przesunięta w prawo (jeśli jest taka możliwość)</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:333</div></div>
+<div class="ttc" id="aclass_plansza_html_afbee95fdb6544d792de9b38a58baa47d"><div class="ttname"><a href="class_plansza.html#afbee95fdb6544d792de9b38a58baa47d">Plansza::Rysowanie_czesci_planszy</a></div><div class="ttdeci">void Rysowanie_czesci_planszy(const int start, sf::RenderWindow &amp;window, sf::Texture &amp;tlo_tekstura, sf::Texture &amp;podl_tekstura, sf::Texture &amp;mario_tekstura_prawa, sf::Texture &amp;mario_tekstura_lewa, sf::Texture &amp;moneta_tekstura, sf::Texture &amp;strzal_poziomy_tekstura, sf::Texture &amp;strzal_pionowy_tekstura, sf::Texture &amp;strzelec_poziomy_tekstura, sf::Texture &amp;strzelec_pionowy_tekstura, sf::Texture &amp;bomba_tekstura)</div><div class="ttdoc">metoda zajmująca się wyświetleniem aktualnego stanu planszy</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:155</div></div>
+<div class="ttc" id="aclass_plansza_html_ab010e5991a344890f8eab568c7593920"><div class="ttname"><a href="class_plansza.html#ab010e5991a344890f8eab568c7593920">Plansza::maksymalny_odstep</a></div><div class="ttdeci">bool maksymalny_odstep(const int pole)</div><div class="ttdoc">sprawdzenie, czy nie występuje zbyt duża ilość pustych pól bez podłóg</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:93</div></div>
+<div class="ttc" id="aclass_plansza_html_a85bc27b257f15f4b3b443d0c443b28d9"><div class="ttname"><a href="class_plansza.html#a85bc27b257f15f4b3b443d0c443b28d9">Plansza::LadowanieTekstur</a></div><div class="ttdeci">void LadowanieTekstur(sf::Texture &amp;mario_tekstura_prawa, sf::Texture &amp;mario_tekstura_lewa, sf::Texture &amp;podl_tekstura, sf::Texture &amp;moneta_tekstura, sf::Texture &amp;tlo_tekstura, sf::Texture &amp;strzal_poziomy_tekstura, sf::Texture &amp;strzal_pionowy_tekstura, sf::Texture &amp;strzelec_poziomy_tekstura, sf::Texture &amp;strzelec_pionowy_tekstura, sf::Texture &amp;bomba_tekstura)</div><div class="ttdoc">metoda zajmująca się załadowaniem wszystkich używanych tekstur</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:120</div></div>
+<div class="ttc" id="aclass_plansza_html_a879731dfd6ff4acb1ac31ddef5887f57"><div class="ttname"><a href="class_plansza.html#a879731dfd6ff4acb1ac31ddef5887f57">Plansza::aktualna_ilosc_punktow</a></div><div class="ttdeci">int aktualna_ilosc_punktow</div><div class="ttdoc">przechowuje aktualną ilość punktów zebraną przez gracza</div><div class="ttdef"><b>Definition:</b> Plansza.h:114</div></div>
+<div class="ttc" id="aclass_plansza_html_a68cb243026dbc0a68b4d05657e8034ec"><div class="ttname"><a href="class_plansza.html#a68cb243026dbc0a68b4d05657e8034ec">Plansza::fizyka_postaci_pion</a></div><div class="ttdeci">void fizyka_postaci_pion(const int pierwsze_wyswietlane_pole)</div><div class="ttdoc">fizyka postaci (gracza) w pionie</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:294</div></div>
+<div class="ttc" id="a_menu_8h_html"><div class="ttname"><a href="_menu_8h.html">Menu.h</a></div></div>
+<div class="ttc" id="aclass_plansza_html_ae58ab9e9e0a12c39f36750a0faa2c100"><div class="ttname"><a href="class_plansza.html#ae58ab9e9e0a12c39f36750a0faa2c100">Plansza::Plansza</a></div><div class="ttdeci">Plansza()</div><div class="ttdoc">Konstruktor</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:3</div></div>
+<div class="ttc" id="aclass_plansza_html_a149603cbb614c21f1519b4dcdde9409b"><div class="ttname"><a href="class_plansza.html#a149603cbb614c21f1519b4dcdde9409b">Plansza::iloscPunktow</a></div><div class="ttdeci">int iloscPunktow</div><div class="ttdoc">przechowuje całkowitą ilość punktów do zdobycia</div><div class="ttdef"><b>Definition:</b> Plansza.h:102</div></div>
+<div class="ttc" id="aclass_plansza_html"><div class="ttname"><a href="class_plansza.html">Plansza</a></div><div class="ttdef"><b>Definition:</b> Plansza.h:9</div></div>
+<div class="ttc" id="aclass_plansza_html_a170804979fada0d68044d3cf11c4277d"><div class="ttname"><a href="class_plansza.html#a170804979fada0d68044d3cf11c4277d">Plansza::wypelnienie_poczatkowych_pol</a></div><div class="ttdeci">void wypelnienie_poczatkowych_pol(std::mt19937 &amp;gen, const int poczatekp, const int koniecp)</div><div class="ttdoc">wypełnienie podłogami określonej liczby pól (bezpieczne_pola) by na samym początku na gracza nie czyh...</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:105</div></div>
+<div class="ttc" id="aclass_plansza_html_a2dc1a663261c1c58c8e42354169efb65"><div class="ttname"><a href="class_plansza.html#a2dc1a663261c1c58c8e42354169efb65">Plansza::stworzenie_wyspy</a></div><div class="ttdeci">bool stworzenie_wyspy(const int i, const int pole)</div><div class="ttdoc">sprawdzanie jest, czy spełniony jest warunek wygenerowania wyspy, czyli po prostu czy na poprzednich ...</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:74</div></div>
+<div class="ttc" id="aclass_plansza_html_a54a6d4832eb334107cf6e284858e769b"><div class="ttname"><a href="class_plansza.html#a54a6d4832eb334107cf6e284858e769b">Plansza::wykonanie_skoku</a></div><div class="ttdeci">void wykonanie_skoku(const int pierwsze_wyswietlane_pole)</div><div class="ttdoc">wykonanie skoku, przypisuje wartość polu skok</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:239</div></div>
+<div class="ttc" id="a_constants_and_includes_8h_html"><div class="ttname"><a href="_constants_and_includes_8h.html">ConstantsAndIncludes.h</a></div></div>
+<div class="ttc" id="a_struktury_i_funkcje_8h_html"><div class="ttname"><a href="_struktury_i_funkcje_8h.html">StrukturyIFunkcje.h</a></div></div>
+<div class="ttc" id="aclass_plansza_html_a38398972a684c6c89dcb2265dd51578b"><div class="ttname"><a href="class_plansza.html#a38398972a684c6c89dcb2265dd51578b">Plansza::wyswietlenie</a></div><div class="ttdeci">void wyswietlenie(sf::RenderWindow &amp;window)</div><div class="ttdoc">główna metoda klasy, zajmuje się sterowaniem i koordynowaniem całego przebiegu gry</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:382</div></div>
+<div class="ttc" id="aclass_plansza_html_ac89cbd5e4776e15ca44f43abb0e78e5b"><div class="ttname"><a href="class_plansza.html#ac89cbd5e4776e15ca44f43abb0e78e5b">Plansza::bariera</a></div><div class="ttdeci">std::barrier bariera</div><div class="ttdoc">bariera synchronizująca rozpoczęcie gry, ładowanie tekstur i wypełnianie pierwszych 2/3 planszy</div><div class="ttdef"><b>Definition:</b> Plansza.h:22</div></div>
+<div class="ttc" id="aclass_plansza_html_a4eeb50a37b42c2ac27c75c43f597ca09"><div class="ttname"><a href="class_plansza.html#a4eeb50a37b42c2ac27c75c43f597ca09">Plansza::wypelnienie_mindlwys</a></div><div class="ttdeci">bool wypelnienie_mindlwys(const int wysokosc, int pole)</div><div class="ttdoc">metoda sprawdzająca, czy wszystkie podłogi na poprzednim polu mają już wystarczającą długość,...</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:64</div></div>
+<div class="ttc" id="aclass_plansza_html_a469599c231541b6696d4ff9ce00cb61c"><div class="ttname"><a href="class_plansza.html#a469599c231541b6696d4ff9ce00cb61c">Plansza::start</a></div><div class="ttdeci">std::chrono::time_point&lt; std::chrono::system_clock &gt; start</div><div class="ttdoc">przechowuje czas startu gry</div><div class="ttdef"><b>Definition:</b> Plansza.h:106</div></div>
+<div class="ttc" id="aclass_plansza_html_a721ea0dd7526a45883844a09216719a2"><div class="ttname"><a href="class_plansza.html#a721ea0dd7526a45883844a09216719a2">Plansza::smierc</a></div><div class="ttdeci">void smierc(int i, int k)</div><div class="ttdoc">gracz poniósł klęskę</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:289</div></div>
+<div class="ttc" id="aclass_plansza_html_a1e1cb696b17033d730c2b5839f94c870"><div class="ttname"><a href="class_plansza.html#a1e1cb696b17033d730c2b5839f94c870">Plansza::sprawdzenie_pola</a></div><div class="ttdeci">bool sprawdzenie_pola(int i, int k)</div><div class="ttdoc">sprawdzenie pola na które będzie wchodził gracz</div><div class="ttdef"><b>Definition:</b> Plansza.cpp:256</div></div>
+<div class="ttc" id="aclass_przeciwnicy_html"><div class="ttname"><a href="class_przeciwnicy.html">Przeciwnicy</a></div><div class="ttdef"><b>Definition:</b> Przeciwnicy.h:13</div></div>
+<div class="ttc" id="a_przeciwnicy_8h_html"><div class="ttname"><a href="_przeciwnicy_8h.html">Przeciwnicy.h</a></div></div>
+<div class="ttc" id="aclass_plansza_html_af36a03eb37b52e3ac24998d1988db7b1"><div class="ttname"><a href="class_plansza.html#af36a03eb37b52e3ac24998d1988db7b1">Plansza::aktualny</a></div><div class="ttdeci">std::chrono::time_point&lt; std::chrono::system_clock &gt; aktualny</div><div class="ttdoc">używany pomocniczo w celu odczytania czasu w konkretnym momencie trwania, aktualnie tylko na końcu,...</div><div class="ttdef"><b>Definition:</b> Plansza.h:110</div></div>
+<div class="ttc" id="aclass_plansza_html_a88f420ba6d6067e44812baa2982b9a3c"><div class="ttname"><a href="class_plansza.html#a88f420ba6d6067e44812baa2982b9a3c">Plansza::generowanie</a></div><div class="ttdeci">bool generowanie</div><div class="ttdoc">gdy gracz przejdzie na konkretne pola (ich położenie jest zależne od ustawionej długości planszy) to ...</div><div class="ttdef"><b>Definition:</b> Plansza.h:18</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>
